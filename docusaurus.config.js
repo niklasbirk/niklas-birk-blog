@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Niklas Birk und die Welt der Mathematik und Informatik',
+  title: 'Mathematik, Informatik und Programmierung',
   tagline: 'Mathematik und Informatik sind cool',
   url: 'https://www.niklas-birk.de',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/niklas-birk-icon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -32,13 +32,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
        ({
-      //   docs: {
-      //     sidebarPath: require.resolve('./sidebars.js'),
-      //     // Please change this to your repo.
-      //     // Remove this to remove the "edit this page" links.
-      //     // editUrl:
-      //     //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-      //   },
+        docs: false, //{
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl:
+        //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -56,8 +56,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'Niklas Birk und die Welt der Mathematik und Informatik',
+        title: 'Mathematik und Informatik',
         logo: {
           alt: 'Logo von Niklas Birk',
           src: 'img/niklas-birk-logo.svg',
@@ -71,8 +76,8 @@ const config = {
           // },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://git.niklas-birk.de/niklas/niklas_birk_blog',
+            label: 'Gitea',
             position: 'right',
           },
         ],
@@ -92,14 +97,6 @@ const config = {
           {
             title: 'Community',
             items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/SirNik_OdTW',
@@ -116,6 +113,10 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'Website',
+                href: 'https://www.niklas-birk.de',
               },
               {
                 label: 'Gitea',
