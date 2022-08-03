@@ -32,20 +32,22 @@ const config = {
             'classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
-                docs: false, //{
-                //   sidebarPath: require.resolve('./sidebars.js'),
+                // docs: false,
+                docs: {
+                  sidebarPath: require.resolve('./sidebars.js'),
                 //   // Please change this to your repo.
                 //   // Remove this to remove the "edit this page" links.
                 //   // editUrl:
                 //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                // },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    // editUrl:
-                    //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 },
+                blog: false,
+                // blog: {
+                //     showReadingTime: true,
+                //     // Please change this to your repo.
+                //     // Remove this to remove the "edit this page" links.
+                //     // editUrl:
+                //     //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -68,13 +70,17 @@ const config = {
                     src: 'img/niklas-birk-logo.svg',
                 },
                 items: [
+                    {
+                      type: 'doc',
+                      docId: 'intro',
+                      position: 'left',
+                      label: 'Mathematik, Informatik und Programmierung',
+                    },
                     // {
-                    //   type: 'doc',
-                    //   docId: 'intro',
-                    //   position: 'left',
-                    //   label: 'Tutorial',
+                    //     to: '/blog',
+                    //     label: 'Blog',
+                    //     position: 'left'
                     // },
-                    {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://git.niklas-birk.de/niklas/niklas_birk_blog',
                         label: 'Gitea',
@@ -85,17 +91,25 @@ const config = {
             footer: {
                 style: 'dark',
                 links: [
-                    // {
-                    //   title: 'Docs',
-                    //   items: [
-                    //     {
-                    //       label: 'Tutorial',
-                    //       to: '/docs/intro',
-                    //     },
-                    //   ],
-                    // },
                     {
-                        title: 'Community',
+                      title: 'Themen',
+                      items: [
+                        {
+                          label: 'Mathematik',
+                          to: '/docs/mathematik',
+                        },
+                          {
+                              label: 'Informatik',
+                              to: '/docs/informatik',
+                          },
+                          {
+                              label: 'Programmierung',
+                              to: '/docs/programmierung',
+                          },
+                      ],
+                    },
+                    {
+                        title: 'Socials',
                         items: [
                             {
                                 label: 'Twitter',
@@ -110,10 +124,10 @@ const config = {
                     {
                         title: 'More',
                         items: [
-                            {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
+                            // {
+                            //     label: 'Blog',
+                            //     to: '/blog',
+                            // },
                             {
                                 label: 'Website',
                                 href: 'https://www.niklas-birk.de',
