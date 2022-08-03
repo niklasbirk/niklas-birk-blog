@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:ooo="http://xml.openoffice.org/svg/export" version="1.2" width="100mm" height="100mm" viewBox="0 0 10000 10000"
+<svg version="1.2" width="100mm" height="100mm" viewBox="0 0 10000 10000"
      preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round"
      xmlns="http://www.w3.org/2000/svg"
      xml:space="preserve">
  <defs class="ClipPathGroup">
-  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+  <clipPath id="presentation_clip_path">
    <rect x="0" y="0" width="10000" height="10000"/>
   </clipPath>
-     <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
+     <clipPath id="presentation_clip_path_shrink">
    <rect x="10" y="10" width="9980" height="9980"/>
   </clipPath>
  </defs>
     <defs class="TextShapeIndex">
-  <g ooo:slide="id1" ooo:id-list="id3"/>
+<!--  <g ooo:slide="id1" ooo:id-list="id3"/>-->
  </defs>
     <defs class="EmbeddedBulletChars">
   <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
@@ -62,13 +62,13 @@
        <g id="id3">
         <rect class="BoundingBox" stroke="none" fill="none" x="0" y="1" width="10001" height="10001"/>
            <defs>
-         <clipPath id="clip_path_1" clipPathUnits="userSpaceOnUse">
+         <clipPath id="clip_path_1">
           <path d="M 0,1 L 10000,1 10000,10001 0,10001 0,1 Z"/>
          </clipPath>
         </defs>
            <g clip-path="url(#clip_path_1)"/>
            <defs>
-         <clipPath id="clip_path_2" clipPathUnits="userSpaceOnUse">
+         <clipPath id="clip_path_2">
           <path d="M 0,1 L 10000,1 10000,10001 0,10001 0,1 Z"/>
          </clipPath>
         </defs>
