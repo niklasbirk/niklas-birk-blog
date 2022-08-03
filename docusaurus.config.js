@@ -83,7 +83,7 @@ const config = {
                     // },
                     {
                         href: 'https://git.niklas-birk.de/niklas/niklas_birk_blog',
-                        label: 'Gitea',
+                        label: 'Zum Code',
                         position: 'right',
                     },
                 ],
