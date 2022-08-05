@@ -24,9 +24,9 @@ Im Folgenden möchte ich ein paar verschiedene Definitionen aufzeigen, die alles
 :::note Informatik
 
 - Informatik beschäftigt sich mit der automatischen Informationsverarbeitung in Natur, Technik und Gesellschaft.
-- Informatik systematischen Verarbeitung von Informationen, besonders der automatischen Verarbeitung mithilfe von Computern.
+- Informatik ist die Wissenschaft der systematischen Verarbeitung von Informationen, besonders der automatischen Verarbeitung mithilfe von Computern.
 - Wissenschaft von automatisierter Verarbeitung von (Daten und) Informationen
-- 
+
 :::
 
 In diesen Definitionen verstecken sich nun ein paar wichtige Worte, wie der Begriff der **Information**.
@@ -39,16 +39,16 @@ Ein bekannter Informatiker hat mal folgendes gesagt:
 > 
 >  —  Edsger Dijsktra
 
-Computer sind ein Hilfsmittel, um das sich durchaus manche kümmern, aber keinesfalls die Hauptbeschäftigung!
+Computer sind ein Hilfsmittel, um das sich durchaus manche kümmern, aber keinesfalls die alleinige Beschäftigung!
 Informatiker beschäftigen sich mit mehr als nur Computer.
 
-Im Englischen wird Informatik gerne als *computer science* übersetzt, aber auch Begriff *informatics* ist anzutreffen.
+Im Englischen wird Informatik gerne als *computer science* übersetzt, aber auch der Begriff *informatics* ist anzutreffen.
 Das Wort Informatik kann man als Kofferwort betrachten und setzt sich aus zwei Wörtern zusammen. 
 Jedoch gibt es zwei Alternativformen:
 
 ![Informatik als Wort besteht aus "INFORmation" und "AutoMATIK" oder "MatheMATIK"](@site/static/img/informatik/informatik/informatik_wort.svg)
 
-**Information** und **Automatik** deckt sich jar durchaus mit den Definitionen, aber was hat hier die **Mathematik** verloren?
+**Information** und **Automatik** deckt sich ja durchaus mit den Definitionen, aber was hat hier die **Mathematik** verloren?
 Nun, das ist gerade der Punkt, auf den ich als angehender Mathematiker gerne rumreite und der Teil,
 den viele unterschätzen oder gar nicht so genau davon wissen. 
 Mathematik spielt im Ausbildungsberuf *Fachinformatiker* zum Beispiel kaum eine Rolle, 
@@ -130,7 +130,8 @@ Sie umfasst unter anderem folgende Untersuchungsgebiete:
 - Eingebettete Systeme
 
 ### Praktische Informatik
-Die praktische Informatik steht eng mit der Elektrotechnik und Nachrichtentechnik in Verbindung und hat tatsächlich etwas mit Computer zu tun.
+Die praktische Informatik beschäftigt sich zum einen mit Programmiersprachen selbst und ihren Eigenschaften, 
+aber auch mit der Softwaretechnik (u.a. Design, Entwurf, Test und Projektmanagement).
 
 :::note Praktische Informatik
 
