@@ -35,9 +35,9 @@ Auch wird das Wort "**automatisch**" in allen aufgeführt: Das ist der Teil mit 
 Aber Informatik beschränkt sich nicht nur auf diese und ist vor allen Dingen mehr als Programmieren!
 
 Ein bekannter Informatiker hat mal folgendes gesagt:
-> In der Informatik geht es genau so wenig um Computer, wie in der Astronomie um Teleskope.
+> In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope.
 > 
->  —  Edsger Dijsktra
+>  —  Edsger Dijkstra
 
 Computer sind ein Hilfsmittel, um das sich durchaus manche kümmern, aber keinesfalls die alleinige Beschäftigung!
 Informatiker beschäftigen sich mit mehr als nur Computer.
@@ -46,7 +46,7 @@ Im Englischen wird Informatik gerne als *computer science* übersetzt, aber auch
 Das Wort Informatik kann man als Kofferwort betrachten und setzt sich aus zwei Wörtern zusammen. 
 Jedoch gibt es zwei Alternativformen:
 
-![Informatik als Wort besteht aus "INFORmation" und "AutoMATIK" oder "MatheMATIK"](@site/static/img/informatik/informatik/informatik_wort.svg)
+![Informatik als Wort besteht aus "Information" und "Automatik" oder "Mathematik"](/img/informatik/informatik/informatik_wort.svg)
 
 **Information** und **Automatik** deckt sich ja durchaus mit den Definitionen, aber was hat hier die **Mathematik** verloren?
 Nun, das ist gerade der Punkt, auf den ich als angehender Mathematiker gerne rumreite und der Teil,
@@ -54,7 +54,7 @@ den viele unterschätzen oder gar nicht so genau davon wissen.
 Mathematik spielt im Ausbildungsberuf *Fachinformatiker* zum Beispiel kaum eine Rolle, 
 weshalb ich diese weiter oben erwähnt habe.
 Informatik als Wissenschaft **ist** Mathematik, alles baut darauf auf und aus meiner Sicht ist das gerade der
-essentiellste Teil!
+essenziellste Teil!
 
 ### Informatik = IT?
 Außerdem hört man häufig, dass Menschen die **IT** mit **Informatik** gleichsetzen, auch das ist nicht ganz korrekt.
@@ -76,14 +76,14 @@ Als Kommunikationstechnik bezeichnet man zusammenfassend Techniken für die tech
 Folgendes (chaotisches) Schaubild zeigt ein wenig das Zusammenspiel von den Wissenschaften (die Ovale) und den Technikbereichen (Rechtecke) zur Informatik.
 Überschneidungen bedeuten hierbei, dass sich die Wissenschaften oder Techniken überschneiden in Bezug auf Untersuchungs- und Teilgebiete oder Technikbereiche.
 
-![Informatik in Bezug auf andere Wissenschaften und Technikbereiche](@site/static/img/informatik/informatik/informatik_it.svg)
+![Informatik in Bezug auf andere Wissenschaften und Technikbereiche](/img/informatik/informatik/informatik_it.svg)
 
 ## Teilgebiete der Informatik
 Im Folgenden möchte ich die Informatik und ihre Teilgebiete und dessen Bezug zu anderen Wissenschaften oder Techniken etwas genauer vorstellen.
 Bisher habe ich noch keine konkreten Namen genannt, womit sich die Informatik denn genau beschäftigt.
 Folgendes Schaubild liefert einen ersten Überblick:
 
-![Informatik in Bezug auf andere Wissenschaften und Technikbereiche](@site/static/img/informatik/informatik/informatik_teilgebiete.svg)
+![Informatik in Bezug auf andere Wissenschaften und Technikbereiche](/img/informatik/informatik/informatik_teilgebiete.svg)
 
 Einige der unten aufgezählten Untersuchungsgebiete lassen sich auch anderen Teilgebieten zuordnen,
 da diese natürlich untereinander enge Verbindungen haben und es sich nicht immer klar abgrenzen lässt.
@@ -113,7 +113,7 @@ Die technische Informatik steht eng mit der Elektrotechnik und Nachrichtentechni
 
 :::note Technische Informatik
 
-Die Technische Informatik beschäftigt sich mit den hardwaretechnischen Grundlagen von Rechen- und Kommunikationssystemen. [^1]
+Die technische Informatik beschäftigt sich mit den hardwaretechnischen Grundlagen von Rechen- und Kommunikationssystemen. [^1]
 
 :::
 
@@ -135,7 +135,7 @@ aber auch mit der Softwaretechnik (u.a. Design, Entwurf, Test und Projektmanagem
 
 :::note Praktische Informatik
 
-Die Praktische Informatik beschäftigt sich mit Algorithmen, Datenstrukturen, 
+Die praktische Informatik beschäftigt sich mit Algorithmen, Datenstrukturen, 
 Programmiersprachen, Betriebssystemen und Datenbanken sowie mit den softwareseitigen Grundlagen der Informatik. [^1]
 
 :::
