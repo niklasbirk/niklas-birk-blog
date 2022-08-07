@@ -206,7 +206,7 @@ Die diskrete Mathematik beschäftigt sich mit Operationen auf höchstens abzähl
 :::
 
 Als Untersuchungs- und Teilgebiete der diskreten Mathematik können folgende aufgezählt werden:
-- Kodierungstheorie
+- Codierungstheorie
 - Kryptographie
 - Graphentheorie
 - Kombinatorik
