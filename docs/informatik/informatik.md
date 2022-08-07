@@ -3,6 +3,7 @@ title: Was ist Informatik?
 tags: [informatik, definition]
 sidebar_position: 1
 ---
+
 # Informatik - eine Einführung
 ## Drucker, Windows und Programmieren?
 Am Anfang möchte ich mich ein wenig mit der Frage beschäftigen, was die Informatik eigentlich ist.
@@ -37,7 +38,7 @@ Aber Informatik beschränkt sich nicht nur auf diese und ist vor allen Dingen me
 Ein bekannter Informatiker hat mal folgendes gesagt:
 > In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope.
 > 
->  —  Edsger Dijkstra
+>  — Edsger Dijkstra
 
 Computer sind ein Hilfsmittel, um das sich durchaus manche kümmern, aber keinesfalls die alleinige Beschäftigung!
 Informatiker beschäftigen sich mit mehr als nur Computer.
