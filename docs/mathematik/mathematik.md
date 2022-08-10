@@ -37,8 +37,8 @@ Mathematik entstand aus der Untersuchung von geometrischen Figuren und dem Rechn
 Jedoch hat sie sich weiterentwickelt zu etwas, das mit bloßem Rechnen nicht mehr viel zu tun hat.
 Auch die Geometrie hat sich zu etwas entwickelt, was wir uns so gar nicht mehr vorstellen können.
 Das *übliche* Rechnen und die *übliche* Geometrie sind allerdings allesamt Spezialfälle der heutigen Auffassungen
-und eignen sich daher dafür sich die Dinge vorzustellen, deshalb beschränkt man sich häufig darauf, 
-wenn man einer Person Mathematik nahe bringen möchte, ohne diese abzuschrecken.
+und eignen sich daher gut dafür sich die Dinge vorzustellen. 
+Auch deshalb beschränkt man sich häufig auf diese, wenn man einer Person Mathematik nahe bringen möchte.
 Auch spielt das Rechnen in unserem Alltag an der Supermarktkasse oder beim Zählen eine große Rolle.
 
 Mathematik zählt wie die [Informatik](/informatik/informatik.md) zu den *Struktur*- bzw. *Formalwissenschaften*.
@@ -169,7 +169,7 @@ wie Stetigkeit, Differenzierbarkeit und Integrierbarkeit.
 
 :::
 
-Folgende Untersuchungs- und Teilgebiete können u.a. der Algebra zugeordnet werden:
+Folgende Untersuchungs- und Teilgebiete können u.a. der Analysis zugeordnet werden:
 - Folgen, Reihen und Grenzwerte
 - Reelle Analysis
   - Stetigkeit
@@ -214,7 +214,6 @@ Als Untersuchungs- und Teilgebiete der diskreten Mathematik können folgende auf
 
 #### Numerik
 Durch die Erkenntnisse der Numerik lassen sich näherungsweise Lösungen durch Computer berechnen.
-Computer arbeiten diskret, da sie nur
 
 :::note Numerische Mathematik
 
@@ -280,7 +279,7 @@ Geometrie beschäftigt sich mit der allgemeinen Untersuchung invarianter (unver�
 
 :::
 
-Folgende Untersuchungs- und Teilgebiete der Stochastik und Statistik können genannt werden:
+Folgende Untersuchungs- und Teilgebiete der Geometrie können genannt werden:
 - Geometrische Figuren
 - Synthetische Geometrie
   - Projektive Geometrie
@@ -292,8 +291,8 @@ Folgende Untersuchungs- und Teilgebiete der Stochastik und Statistik können gen
 
 #### Zahlentheorie 
 Die Zahlentheorie beschäftigt sich hauptsächlich mit Zahlen.
-In der *elementare Zahlentheorie* insbesondere mit den *ganzen Zahlen*.
-Begriffe wie Teilbarkeit kommen aus diesem Teilgebiet.
+In der *elementaren Zahlentheorie* insbesondere mit den *ganzen Zahlen*.
+Begriffe wie Teilbarkeit kommen aus diesem Teilgebiet, genauer gesagt aus der Arithmetik..
 Zahlentheoretische Erkenntnisse werden insbesondere in der Codierungstheorie und Kryptographie benötigt.
 
 :::note Zahlentheorie
