@@ -35,7 +35,7 @@ Allerdings führte das Cantor'sche Modell der Mengenlehre, die *naive Mengenlehr
 Die heutige Mathematik beruht auf einer axiomatisierten Mengenlehre und wird auch *Zermelo-Fraenkel-Mengenlehre* genannt.
 Doch ist die naive Mengenlehre ein Teil der ZF-Mengenlehre und daher nach wie vor ein einfacher und guter Zugang.
 
-## Menge
+## Naive Mengenlehre nach Cantor
 :::note Menge
 
 Unter einer *Menge* verstehen wir jede Zusammenfassung $M$ von bestimmten wohlunterschiedenen Objekten $m$ 
