@@ -38,7 +38,7 @@ Aber Informatik beschränkt sich nicht nur auf diese und ist vor allen Dingen me
 Ein bekannter Informatiker hat mal folgendes gesagt:
 > In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope.
 > 
->  — Edsger Dijkstra
+> — Edsger Dijkstra
 
 Computer sind ein Hilfsmittel, um das sich durchaus manche kümmern, aber keinesfalls die alleinige Beschäftigung!
 Informatiker beschäftigen sich mit mehr als nur Computer.
