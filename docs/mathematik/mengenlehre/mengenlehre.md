@@ -21,7 +21,7 @@ In diesem Teil möchte ich über folgende Themen sprechen:
 ## Über die Mengenlehre
 Die Logik und die Mengenlehre sind eng miteinander verknüpft und bilden die allgemeinen Grundlagen der Mathematik.
 Sie wurde von [Georg Cantor](https://de.wikipedia.org/wiki/Georg_Cantor) im 19. Jahrh. begründet.
-Cantor definierte dabei, was man unter einer *Menge* versteht und untersuchte diese Strukturen dann insbesondere deren *Mächtigkeit*.
+Cantor definierte dabei, was man unter einer *Menge* versteht und untersuchte diese Strukturen dann, u.a. die *Mächtigkeit* von Mengen.
 Der Begriff der *Unendlichkeit* wurde dabei von ihm in besonderem Maße geprägt.
 
 [David Hilbert](https://de.wikipedia.org/wiki/David_Hilbert), einer der bedeutendsten Mathematiker der Neuzeit, sagte einst:
@@ -30,7 +30,7 @@ Der Begriff der *Unendlichkeit* wurde dabei von ihm in besonderem Maße geprägt
 > 
 > — David Hilbert
 
-Allerdings führte das Cantor'sche Modell der Mengenlehre, die *naive Mengenlehre* auch zu *Antinomien* (Widersprüchen).
+Allerdings führte das Cantor'sche Modell der Mengenlehre, auch *naive Mengenlehre* genannt, auch zu *Antinomien* (Widersprüchen).
 [Bertrand Russell](https://de.wikipedia.org/wiki/Bertrand_Russell) entdeckte diese Widersprüche und machte sie publik.
 Die heutige Mathematik beruht auf einer axiomatisierten Mengenlehre und wird auch *Zermelo-Fraenkel-Mengenlehre* genannt.
 Doch ist die naive Mengenlehre ein Teil der ZF-Mengenlehre und daher nach wie vor ein einfacher und guter Zugang.
@@ -60,7 +60,7 @@ Folgendes könnte eine Menge von verschiedenen, aber nicht allen Ballarten sein:
 $$
 B = \{ \text{Fußball}, \text{Tennisball}, \text{Baseball} \}
 $$
-Es gilt z.B. $\text{Fußball} \in B$ und $\text{Basketball} \notin Z$.
+Es gilt z.B. $\text{Fußball} \in B$ und $\text{Basketball} \notin B$.
 
 ### Antinomien
 Diese *naive* Auffassung von Menge birgt allerdings Widersprüche, auch *Antinomien* genannt.
@@ -125,5 +125,5 @@ Cantor hat mit der naiven Mengenlehre einen großen Baustein der Mathematik gesc
 Er hat außerdem den Begriffen Endlichkeit und Unendlichkeit Leben eingehaucht.
 Doch hat sein Modell Schwächen, sodass man ein wenig daran arbeiten musste.
 Viele weitere Dinge der Mengenlehre werden in den nächsten Kapiteln behandelt.
-Bevor wir aber mit Mengen an sich weiter machen, folgt erstmal eine kurze Einführung in die Logik auf der die weiter Mengenlehre aufbaut.
+Bevor wir aber mit Mengen an sich weiter machen, folgt erstmal eine kurze Einführung in die Logik auf der die weitere Mengenlehre aufbaut.
 Außerdem bildet die Logik das Fundament der mathematischen Beweise, die uns garantieren, dass Erkenntnisse eine allgemeine Gültigkeit haben.
