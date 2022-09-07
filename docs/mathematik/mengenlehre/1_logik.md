@@ -74,6 +74,8 @@ Jede gültige Zusammensetzung der Symbole nach diesen Regeln ist wieder eine For
 Es erscheinen also keine Operatoren, außer die Klammern, nebeneinander, sondern es liegen am Ende immer eine Aussagenvariable oder ein "Grundaussagen-Symbol" dazwischen.
 
 Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine konkrete (zusammengesetzte) Aussage.
+Zusammengesetzte Aussagen nennt man auch *Aussagenverbindungen*, wenn man den zusammengesetzten Charakter hervorheben möchte,
+ansonsten sind es eben auch nur Aussagen oder Formeln.
 Es sind auch andere Symbole in Verwendung, je nach Person oder je nach Wissenschaft oder Fachgebiet.
 
 Die Operatoren haben einen Namen und eine Sprechweise:
@@ -144,6 +146,18 @@ Wir bilden nun die neue Aussage $A \wedge B$.
 Ist die neue Aussage wahr oder falsch?
 Dazu schauen wir in die Wahrheitstafel bei der Interpretation $w, f$ und sehen, dass $f$ gilt - also ist $A \wedge B$ eine falsche Aussage.
 
+$\neg (3 + 5 = 0)$ ist eine wahre Aussage, denn $3+5$ ist nicht $0$, sondern $8$. 
+In diesem Fall könnte man statt $\neg (3 + 5 = 0)$ auch $3 + 5 \ne 0$ schreiben.
+Die logische Negation macht das $=$ also zu einem $\ne$.
+
+Die Implikation hängt eng mit der logischen Schlussfolgerung zusammen, das sogenannte *Deduktionstheorem*.
+Allerdings wird hierauf nicht näher eingegangen, lediglich der Begriff *folgern* wird hier nun verwendet, 
+wenngleich nicht ganz korrekt, da wir damit Meta- und Objektebene vermischen.
+Wenn wir uns die Wahrheitstabelle der Implikation anschauen, dann stellen wir fest, dass wir aus etwas Wahrem
+nie was Falsches folgern dürfen, aber aus etwas Falschem stets was Wahres:
+- $2^2 = 4 \rightarrow 1+1=1 \qquad\;$ ist falsch
+- $1+1=1 \rightarrow 2+2=4 \quad$ ist wahr
+
 #### Weitere Anmerkungen
 Bei $\vee$ (gesprochen *oder*) ist anzumerken, dass es sich um ein *Inklusiv-Oder* handelt, d.h. die Gesamtaussage ist genau dann wahr,
 wenn mindestens eine Teilaussage wahr ist.
@@ -155,7 +169,285 @@ Die Antivalenz ist auch ein wichtiger Operator, der hier aber nicht näher einge
 Die Implikation bereitet vielen am Anfang Bauchschmerzen, da sie dem umgangssprachlichen "wenn ..., dann ..." auf den ersten Blick nicht vollkommen entspricht.
 Hierfür findet man im Web viele weitere Erklärungen und Beispiele, die vielleicht Abhilfe schaffen können.
 
-*tbc*
+### Klassifikation von Formeln
+:::note Modell
+
+Jede Belegung, unter der die Formel wahr wird nennen wir ein *Modell* der Formel.
+
+:::
+
+#### Beispiele
+$$
+\begin{array}{c||c|c||c}
+     & A & B & F = (A \wedge B) \rightarrow B\\
+    \hline\hline
+    1 & f & f & w\\
+    2 & f & w & f\\
+    3 & w & f & w\\
+    4 & w & w & w\\
+\end{array}
+$$
+Die Zeilen 1, 2 und 4 sind Modelle der Formel $F$.
+
+$$
+\begin{array}{c||c|c||c}
+    & A & B & P = (A \rightarrow B) \leftrightarrow (\neg B \rightarrow \neg A)\\
+    \hline\hline
+    1 & f & f & w\\
+    2 & f & w & w\\
+    3 & w & f & w\\
+    4 & w & w & w\\
+\end{array}
+$$
+Jede Belegung für $P$ ist ein Modell.
+Solche Formeln haben einen bestimmten Namen, der in der nächsten Definition eingeführt wird.
+
+Wir können Formeln nun anhand ihrer Modelle in verschiedene Klassen einteilen:
+
+:::note Klassifikation von Formeln
+
+Falls die Formel mindestens ein Modell hat, nennen wir sie *erfüllbar*.
+
+Eine Formel heißt *allgemeingültig*, falls jede Belegung ein Modell ist.
+Solche Formeln nennt man auch *Tautologie*.
+
+Dagegen nennen wir sie *unerfüllbar*, wenn kein Modell existiert.
+Man nennt so eine Formel auch *Kontradiktion* oder *Widerspruch*.
+
+:::
+
+#### Beispiele
+Oben haben wir bereits eine Tautologie gesehen. 
+Eine weitere wäre:
+$$
+\begin{array}{c||c||c}
+    & A & A \vee \neg A\\
+    \hline\hline
+    1 & f & w\\
+    2 & w & w\\
+\end{array}
+$$
+Diese Tautologie beweist uns gerade den Ausspruch "*Tertium non datur*" ("*Ein Drittes gibt es nicht*", Satz vom ausgeschlossenen Dritten).
+Strom fließt oder er fließt nicht - da gibt es nichts dazwischen.
+
+$$
+\begin{array}{c||c||c}
+    & A & A \wedge \neg A\\
+    \hline\hline
+    1 & f & f\\
+    2 & w & f\\
+\end{array}
+$$
+Das ist eine Kontradiktion, sie ist immer falsch.
+Diese Formel nennt man auch *Widerspruch*. 
+Es kann $A$ *und* $\neg A$ nie gleichzeitig gelten.
+Wenn also bspw. jemand behauptet "Ich wohne in Berlin", er aber gleichzeitig sagt "Ich wohne nicht in Berlin", dann widerspricht er sich ja selbst.
+
+### Semantische Äquivalenz
+Wenn wir über verschiedene Formeln reden und bestimmen wollen, ob diese Formeln das gleiche Aussagen, 
+dann ist das die Frage nach der *semantischen Äquivalenz*.
+
+:::note Semantische Äquivalenz
+
+Zwei Formeln $F$ und $G$ heißen *semantisch äquivalent*, wenn sie die gleichen Modelle haben.
+Man schreibt $F \equiv P$ in der Logik oder bei mathematischen Beweisen auch $F \Leftrightarrow P$.
+
+:::
+
+#### Beispiel
+$$
+\begin{array}{c|c||c|c}
+    A & B & A \rightarrow B & \neg B \rightarrow \neg A\\
+    \hline\hline
+    f & f & w & w\\
+    f & w & w & w\\
+    w & f & f & f\\
+    w & w & w & w\\
+\end{array}
+$$
+Die letzten beiden Spalten stimmen überein, also gilt $A \rightarrow B \equiv \neg B \rightarrow \neg A$.
+Diese semantische Äquivalenz nennt man auch *Kontraposition* und ist ein wichtiges mathematisches Beweisverfahren.
+In den Beispielen im Abschnitt [Klassifikation von Formeln](#klassifikation-von-formeln) wurden die zwei Formeln
+schonmal mit der objektsprachlichen *syntaktischen Äquivalenz* verknüpft und die Wahrheitstabelle offenbarte uns dort eine Tautologie.
+Es gibt einen wichtigen Zusammenhang zwischen der objektsprachlichen *syntaktischen Äquivalenz*
+und der metasprachlichen *semantischen Äquivalenz*:
+
+:::info Semantische und syntaktische Äquivalenz
+
+Zwei Formeln $F$ und $P$ heißen *semantisch äquivalent*, genau dann, wenn $F \leftrightarrow P$ eine Tautologie ist.
+
+:::
+
+Es gibt ein paar wichtige semantische Äquivalenzen, die uns auch beim *Rechnen* oder *Umformen* von Formeln helfen.
+Die tatsächliche semantische Äquivalenz lässt sich leicht durch aufstellen einer Wertetabelle ermitteln und ist eine gute Übung.
+
+:::tip Wichtige semantische Äquivalenzen
+
+1. $$
+\begin{align*} 
+    \begin{aligned} 
+        x \wedge y &\equiv y \wedge x\\
+        x \vee y &\equiv y \vee x\\
+        x \leftrightarrow y &\equiv y \leftrightarrow x 
+    \end{aligned}
+    &&\text{Kommutativität}
+\end{align*}
+$$
+2. $$
+\begin{align*}
+    \begin{aligned} 
+        x \wedge (y \wedge z) &\equiv (x \wedge y) \wedge z\\
+        x \vee (y \vee z) &\equiv (x \vee y) \vee z\\
+        x \leftrightarrow (y \leftrightarrow z)
+        &\equiv (x \leftrightarrow y) \leftrightarrow z
+    \end{aligned}
+    &&\text{Assoziativität}
+\end{align*}
+$$
+3. $$
+\begin{align*}
+    \begin{aligned}
+        x \wedge (y \vee z) &\equiv (x \wedge y) \vee (x \wedge z)\\
+        x \vee (y \wedge z) &\equiv (x \vee y) \wedge (x \vee z)
+    \end{aligned}
+    &&\text{Distributivität}
+\end{align*}
+$$
+4. $$
+\begin{align*}
+    \begin{aligned}
+        x \wedge (x \vee y) &\equiv x\\
+        x \vee (x \wedge y) &\equiv x
+    \end{aligned}
+    &&\text{Absorption}
+\end{align*}
+$$
+5. $$
+\begin{align*}
+    \begin{aligned}
+        x \wedge x &\equiv x\\
+        x \vee x &\equiv x
+    \end{aligned}
+    &&\text{Idempotenz}
+\end{align*}
+$$
+6. $$
+\begin{align*}
+    \begin{aligned}
+        \neg(\neg x) &\equiv x\\
+        \neg(x \rightarrow y) &\equiv x \wedge \neg y\\
+        \neg(x \leftrightarrow y)
+        &\equiv \neg x \leftrightarrow y
+        \equiv x \leftrightarrow \neg y
+    \end{aligned}
+    &&\text{Verneinung}
+\end{align*}
+$$
+7. $$
+\begin{align*}
+    \begin{aligned}
+        \neg(x \wedge y) &\equiv \neg x \vee \neg y\\
+        \neg(x \vee y) &\equiv \neg x \wedge \neg y
+     \end{aligned}
+    &&\text{De Morgan'sche Regeln}
+\end{align*}
+$$
+8. $$
+\begin{align*}
+    \begin{aligned}
+           x \leftrightarrow y &\equiv (x \rightarrow y) \wedge (y \rightarrow x)\\
+           x \rightarrow y &\equiv \neg x \vee y\\
+           x \wedge y &\equiv \neg(\neg x \vee \neg y)\\
+           x \vee y &\equiv \neg(\neg x \wedge \neg y)
+    \end{aligned}
+    &&\text{Elimination}
+\end{align*}
+$$
+9. $$
+\begin{align*}
+    \begin{aligned}
+        x \rightarrow y \equiv \neg y \rightarrow \neg x
+    \end{aligned}
+    &&\text{Kontraposition}
+\end{align*}
+$$
+10. $$
+\begin{align*}
+    \begin{aligned}
+       \neg f &\equiv w\\
+       \neg w &\equiv f
+    \end{aligned}
+    &&
+\end{align*}
+$$
+11. $$
+\begin{align*}
+    \begin{aligned}
+       x \wedge \neg x &\equiv f\\
+       x \vee \neg x &\equiv w\\
+       x \leftrightarrow \neg x &\equiv f
+    \end{aligned}
+    &&
+\end{align*}
+$$
+12. $$
+\begin{align*}
+    \begin{aligned}
+       w \wedge x &\equiv x\\
+       f \wedge x &\equiv f\\
+       w \vee x &\equiv w\\
+       f \vee x &\equiv x
+    \end{aligned}
+    &&
+\end{align*}
+$$
+13. $$
+\begin{align*}
+    \begin{aligned}
+       f \rightarrow x &\equiv w\\
+       w \rightarrow x &\equiv x\\
+       x \rightarrow f &\equiv \neg x\\
+       x \rightarrow w &\equiv w
+    \end{aligned}
+    &&
+\end{align*}
+$$
+14. $$
+\begin{align*}
+    \begin{aligned}
+       f \leftrightarrow x &\equiv \neg x\\
+       w \leftrightarrow x &\equiv x
+    \end{aligned}
+    &&
+\end{align*}
+$$
+
+:::
+
+#### Beispiele
+Im folgenden Beispiel wird eine Formel durch obige Äquivalenzen in eine äquivalente Formel umgeformt.
+Die verwendete Äquivalenz wird entsprechend der Nummerierung oben angegeben, damit es besser nachvollziehbar ist, was umgeformt wurde.
+$$
+\begin{alignat*}{2}
+    \quad && &(A \rightarrow B) \rightarrow ((B \rightarrow C) \rightarrow (A \rightarrow C))\\
+    \overset{\text{8.}}{\equiv}\quad && &\neg (\neg A \vee B) \vee (\neg (\neg B \vee C) \vee (\neg A \vee C))\\
+    \overset{\text{7.}}{\equiv}\quad && &(A \wedge \neg B) \vee ((B \wedge \neg C) \vee \neg A \vee C)\\
+    \overset{\text{1.}}{\equiv}\quad && &(A \wedge \neg B) \vee \neg A \vee (B \wedge \neg C) \vee C\\
+    \overset{\text{3.}}{\equiv}\quad && &((A \vee \neg A) \wedge (\neg B \vee \neg A)) \vee ((B \vee C) \wedge (\neg C \vee C))\\
+    \overset{\text{11.}}{\equiv}\quad && &(w \wedge (\neg B \vee \neg A)) \vee ((B \vee C) \wedge w)\\
+    \overset{\text{12.}}{\equiv}\quad && &\neg B \vee \neg A \vee B \vee C\\
+    \overset{\text{3.}}{\equiv}\quad && &\neg B \vee B \vee \neg A \vee C\\
+    \overset{\text{11.}}{\equiv}\quad && &w \vee \neg A \vee C\\
+    \overset{\text{11.}}{\equiv}\quad && &w
+\end{alignat*}
+$$
+In diesem Fall konnten wir nur durch umformen, also insbesondere ohne Wahrheitstabelle, zeigen, 
+dass es sich um eine Tautologie handelt, da die ursprüngliche Formel semantisch äquivalent zu $w$ ist.
+Die Ausgangsformel nennt man auch *Kettenschluss*.
+
+Das Umformen von Gleichungen in der Schule ist übrigens ähnlich.
+Vielleicht hat dein Mathelehrer mal das Wort "*Äquivalenzumformung*" dafür verwendet.
+Es wird so umgeformt, dass sich der Wahrheitswert der Gleichung nicht ändert.
 
 ## Prädikatenlogik (PL 1)
 *tbc*
