@@ -13,7 +13,9 @@ Erst durch die Regeln der Logik selbst, haben die Symbole eine Bedeutung.
 Die Symbole und Schreibweisen selbst nennt man *Syntax*.
 Syntax regelt das gültige Zusammensetzen von Zeichen.
 Die *Semantik* wiederum gibt nun den syntaktisch korrekten Formeln eine Bedeutung, also wie sie zu interpretieren sind.
-Die Syntax und die Semantik hängen in der Logik durchaus eng zusammen, da sie nach ähnlichen Regeln definiert sind, doch sollte man diese nicht verwechseln.
+Syntax und die Semantik hängen in der Logik durchaus eng zusammen, da sie nach ähnlichen Regeln definiert sind, doch sollte man diese nicht verwechseln.
+In der Mathematik sind die Beweise allerdings informal und eher eine Skizze eines formalen logischen Beweises,
+weshalb die strikte Trennung zwischen Syntax und Semantik nicht immer transparent erscheint.
 
 ## Aussagenlogik (PL 0)
 Die *Aussagenlogik* oder auch *Prädikatenlogik 0. Stufe* (*PL0*) beschäftigt sich mit *Aussagen*.
@@ -150,9 +152,10 @@ $\neg (3 + 5 = 0)$ ist eine wahre Aussage, denn $3+5$ ist nicht $0$, sondern $8$
 In diesem Fall könnte man statt $\neg (3 + 5 = 0)$ auch $3 + 5 \ne 0$ schreiben.
 Die logische Negation macht das $=$ also zu einem $\ne$.
 
-Die Implikation hängt eng mit der logischen Schlussfolgerung zusammen, das sogenannte *Deduktionstheorem*.
+Die Implikation hängt eng mit der logischen Schlussfolgerung zusammen, durch das sogenannte *Deduktionstheorem*.
 Allerdings wird hierauf nicht näher eingegangen, lediglich der Begriff *folgern* wird hier nun verwendet, 
 wenngleich nicht ganz korrekt, da wir damit Meta- und Objektebene vermischen.
+Doch wie bereits angemerkt, nimmt man es damit nicht immer so genau, wenn man nicht gerade Logik wirklich formal betreibt.
 Wenn wir uns die Wahrheitstabelle der Implikation anschauen, dann stellen wir fest, dass wir aus etwas Wahrem
 nie was Falsches folgern dürfen, aber aus etwas Falschem stets was Wahres:
 - $2^2 = 4 \rightarrow 1+1=1 \qquad\;$ ist falsch
@@ -250,7 +253,7 @@ dann ist das die Frage nach der *semantischen Äquivalenz*.
 :::note Semantische Äquivalenz
 
 Zwei Formeln $F$ und $G$ heißen *semantisch äquivalent*, wenn sie die gleichen Modelle haben.
-Man schreibt $F \equiv P$ in der Logik oder bei mathematischen Beweisen auch $F \Leftrightarrow P$.
+Man schreibt $F \equiv P$.
 
 :::
 
