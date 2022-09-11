@@ -223,22 +223,22 @@ Man nennt so eine Formel auch *Kontradiktion* oder *Widerspruch*.
 Oben haben wir bereits eine Tautologie gesehen. 
 Eine weitere wäre:
 $$
-\begin{array}{c||c||c}
-    & A & A \vee \neg A\\
+\begin{array}{c||c}
+    A & A \vee \neg A\\
     \hline\hline
-    1 & f & w\\
-    2 & w & w\\
+    f & w\\
+    w & w\\
 \end{array}
 $$
 Diese Tautologie beweist uns gerade den Ausspruch "*Tertium non datur*" ("*Ein Drittes gibt es nicht*", Satz vom ausgeschlossenen Dritten).
 Strom fließt oder er fließt nicht - da gibt es nichts dazwischen.
 
 $$
-\begin{array}{c||c||c}
-    & A & A \wedge \neg A\\
+\begin{array}{c||c}
+    A & A \wedge \neg A\\
     \hline\hline
-    1 & f & f\\
-    2 & w & f\\
+    f & f\\
+    w & f\\
 \end{array}
 $$
 Das ist eine Kontradiktion, sie ist immer falsch.
