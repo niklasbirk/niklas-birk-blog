@@ -231,7 +231,7 @@ $$
 \end{array}
 $$
 Diese Tautologie beweist uns gerade den Ausspruch "*Tertium non datur*" ("*Ein Drittes gibt es nicht*", Satz vom ausgeschlossenen Dritten).
-Strom fließt oder er fließt nicht - da gibt es nichts dazwischen.
+"Es gilt oder es gilt nicht" ist also eine immer wahre Aussage, da gibt es nichts dazwischen.
 
 $$
 \begin{array}{c||c}
