@@ -59,7 +59,7 @@ Aussagenlogische *Formeln* beinhalten verschiedene Symbole und werden rekursiv d
 
 :::note Aussagenlogische Formeln
 
-Sei $O = \{ \neg, \wedge, \vee, \rightarrow, \leftrightarrow, (, ) \}$ die Menge der *logischen Operatoren*
+Sei $O = \{ \neg, \wedge, \vee, \rightarrow, \leftrightarrow, (, ) \}$ die Menge der *logischen Operatoren* (*Junktoren*)
 und $\Sigma$ eine Menge von Symbolen, die *Aussagevariablen* genannt werden.
 Neben den Aussagenvariablen existieren noch die "Grundaussagen-Symbole" $\{ w, f \}$.
 Um Verwechslungen zu vermeiden sollen alle drei Mengen keine gemeinsamen Elemente enthalten.
@@ -73,16 +73,16 @@ Formeln sind nun rekursiv definiert:
 
 Das letzte ist der oben erwähnte rekursive Teil der Definition.
 Jede gültige Zusammensetzung der Symbole nach diesen Regeln ist wieder eine Formel.
-Es erscheinen also keine Operatoren, außer die Klammern, nebeneinander, sondern es liegen am Ende immer eine Aussagenvariable oder ein "Grundaussagen-Symbol" dazwischen.
+Es erscheinen also keine Junktoren, außer die Klammern, nebeneinander, sondern es liegen am Ende immer eine Aussagenvariable oder ein "Grundaussagen-Symbol" dazwischen.
 
 Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine konkrete (zusammengesetzte) Aussage.
 Zusammengesetzte Aussagen nennt man auch *Aussagenverbindungen*, wenn man den zusammengesetzten Charakter hervorheben möchte,
 ansonsten sind es eben auch nur Aussagen oder Formeln.
 Es sind auch andere Symbole in Verwendung, je nach Person oder je nach Wissenschaft oder Fachgebiet.
 
-Die Operatoren haben einen Namen und eine Sprechweise:
+Die Junktoren haben einen Namen und eine Sprechweise:
 
-:::note Name und Sprechweise der Operatoren
+:::note Name und Sprechweise der Junktoren
 
 $$
 \begin{align*}
@@ -121,7 +121,7 @@ Aber nach welchen Regeln soll das $\wedge$, also das *und*, behandelt werden?
 
 Dafür müssen wir diesen syntaktischen Symbolen nun eine Bedeutung mittels einer Wahrheitstabelle eine Semantik geben.
 
-:::note Semantik der Operatoren
+:::note Semantik der Junktoren
 
 $$
 \begin{array}{c|c||c|c|c|c|c|c}
@@ -136,8 +136,8 @@ $$
 
 :::
 
-Um Klammern zu sparen, vereinbaren wir eine Priorität von Operatoren, ähnlich wie "Punkt vor Strich".
-Die Priorität der Operatoren in absteigender Reihenfolge: $\neg, \wedge, \vee, \rightarrow, \leftrightarrow$.
+Um Klammern zu sparen, vereinbaren wir eine Priorität von Junktoren, ähnlich wie "Punkt vor Strich".
+Die Priorität der Junktoren in absteigender Reihenfolge: $\neg, \wedge, \vee, \rightarrow, \leftrightarrow$.
 
 Eine Zeile dieser Wahrheitstabelle nennt man auch *Interpretation* oder *Belegung*.
 
@@ -167,7 +167,7 @@ wenn mindestens eine Teilaussage wahr ist.
 Das Inklusiv-Oder ist wie ein "Milch *oder* Zucker" beim Kaffee zu verstehen - man kann auch beides nehmen.
 Im Gegensatz dazu steht das *Exklusiv-Oder* (*Antivalenz* genannt, $\not\leftrightarrow$ geschrieben, 
 "entweder $A$ oder $B$" gesprochen), das nur dann wahr wird, wenn genau eine der beiden Teilaussagen wahr ist. 
-Die Antivalenz ist auch ein wichtiger Operator, der hier aber nicht näher eingeführt wird.
+Die Antivalenz ist auch ein wichtiger Junktor, der hier aber nicht näher eingeführt wird.
 
 Die Implikation bereitet vielen am Anfang Bauchschmerzen, da sie dem umgangssprachlichen "wenn ..., dann ..." auf den ersten Blick nicht vollkommen entspricht.
 Hierfür findet man im Web viele weitere Erklärungen und Beispiele, die vielleicht Abhilfe schaffen können.
@@ -453,4 +453,96 @@ Vielleicht hat dein Mathelehrer mal das Wort "*Äquivalenzumformung*" dafür ver
 Es wird so umgeformt, dass sich der Wahrheitswert der Gleichung nicht ändert.
 
 ## Prädikatenlogik (PL 1)
-*tbc*
+Die Aussagenlogik allein reicht leider nicht aus, um viele Problemstellungen in der Mathematik vernünftig zu formulieren.
+
+:::note Variable
+
+Sei $G$ ein Grundbereich von Objekten.
+Für eine *Variable* $x$ über $G$ kann ein Objekt aus $G$ eingesetzt werden.
+
+:::
+
+:::note Aussagenform
+
+Eine *Aussagenform* $H$ über $G$ ist ein schriftsprachliches Gebilde mit mindestens einer Variable.
+Durch Einsetzen von Objekten aus $G$ **für alle** Variablen wird $H$ zu einer Aussage.
+
+:::
+
+Man schreibt $H(x)$ oder $H(x_1, x_2, \dots, x_n)$ für eine Aussagenform $H$ mit den Variablen $x$ bzw. $x_1, x_2, \dots, x_n$.
+Aussagenformen wurden bereits in der [Aussagenlogik](#syntax)) oben eingeführt, ohne sie konkret zu benennen:
+> Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine \[$\dots$\] Aussage.
+ 
+Das Zusammensetzen von Aussagen(-formen) mit den entsprechenden Junktoren ist analog zur Aussagenlogik.
+
+#### Beispiele
+Sei $G = \mathbb{N}$ Grundbereich und $A(n) := ``n + 1 = 3''$ Aussagenform.
+Durch Ersetzen der Variable $n$ durch ein Objekt aus $G$, hier also einer natürlichen Zahl, wird $A(x)$ zu einer Aussage:
+- Für $n = 1$ ist $A(1) := ``1 + 1 = 3''$ eine falsche Aussage.
+- Für $n = 2$ ist $A(2) := ``2 + 1 = 3''$ eine wahre Aussage.
+
+Sei $G$ die Menge aller Lebewesen und $Mensch(x) := ``x \text{ ist ein Mensch}''$ eine Aussagenform.
+In der Prädikatenlogik nennt man solche Aussagenformen ein *Prädikat*.
+$Mensch(AngelaMerkel)$, sprich "Angela Merkel ist ein Mensch", ist eine wahre Aussage,
+während $Mensch(Grumpy Cat)$, sprich "Grumpy Cat ist ein Mensch" eine falsche Aussage ist.
+
+Doch in der Prädikatenlogik gibt es noch mehr, was diese ausmacht:
+
+:::note Quantifizierung
+
+Quantoren:
+- Allquantor: $\forall x$ - sprich: "Für alle $x$ aus $G$"
+- Existenzquantor: $\exists x$ - sprich: "Es existiert ein $x$ aus $G$"
+
+Unter *Quantifizierung* einer Aussagenform $H(x)$ versteht man die Überführung von $H(x)$ mittels den Quantoren in die Aussagen:
+- Allaussage: $\forall x (H(x))$ - sprich: "Für alle $x$ aus $G$ gilt $H(x)$"
+- Existenzaussage: $\exists x (H(x))$ - sprich: "Es existiert ein $x$ aus $G$ für das $H(x)$ gilt"
+
+Variablen, die durch einen Quantor quantifiziert sind, nennt man auch *gebunden*.
+Nicht gebundene Variablen heißen *frei*.
+
+:::
+
+Eine Aussagenform wurde erst zu einer Aussage, wenn wir die Variablen durch ein konkretes Objekt aus $G$ ersetzt haben.
+Durch ein Quantor ist eine Aussagenform direkt eine Aussage:
+
+#### Beispiele
+Sei $G = \mathbb{N}$ Grundbereich und $H(x) := ``x + 1 = 3''$ Aussagenform.
+Durch Quantifizierung entstehen folgende Aussagen:
+- $\forall x (x + 1 = 3)$ - "Für alle $x$ aus $G$ gilt $x + 1 = 3" ist eine falsche Aussage.
+- $\exists x (x + 1 = 3)$ - "Es existiert ein $x$ aus $G$ mit $x + 1 = 3" ist eine wahre Aussage.
+
+Sei $G = \mathbb{N}$ und $H(x) := ``2x \ge x''$.
+Durch Quantifizierung entstehen folgende Aussagen:
+- $\forall x (2x \ge x)$ - "Für alle $x$ aus $G$ gilt $2x \ge x" ist eine wahre Aussage.
+- $\exists x (2x \ge x)$ - "Es existiert ein $x$ aus $G$ mit $2x \ge x" ist eine wahre Aussage.
+
+Man beachte hierbei, dass es bei einer Existenzaussage heißt "Es existiert **mindestens** ein $x\ \dots$".
+Im Beispiel sieht man, dass mehrere $x$ die letzte Aussage erfüllen.
+Möchte man dagegen deutlich machen, dass **genau** ein $x$ existiert, dann schreibt man das $\exists ! x (H(x))$.
+Damit wäre $\exists ! x (2x \ge x)$ eine falsche Aussage, da jedes $x$ das oben definierte $H(x)$ erfüllt.
+
+Sei $G = \mathbb{Z}$ und $H(x) := ``2x \ge x''$.
+$\forall x (2x \ge x)$ ist nun eine falsche Aussage, da sich der Grundbereich geändert hat.
+Dagegen ist $\forall x (x \in \mathbb{N} \rightarrow 2x \ge x)$ wieder wahr.
+Statt dieser Schreibweise findet man häufig folgende unexakte Schreibweisen für solche Aussagen:
+$$
+\begin{equation*}
+    \forall x \in \mathbb{N}:\ 2x \ge x
+\end{equation*}
+$$
+
+Eine Aussagenform wird natürlich nur dann zu einer Aussage, wenn alle Variablen gebunden sind oder, falls freie Variablen existieren,
+diese durch eine konkrete Aussage ersetzt wurden.
+Folgende Beispiele sind nur Aussagenformen, da nicht alle Variablen gebunden vorkommen.  
+Sei $G = \mathbb{Z}$.
+- $x + y = 0$
+- $\forall x:\ x + y = 0$
+
+Dagegen sind sie quantifiziert oder ersetzt bspw. folgende Aussagen:
+- $\forall x:\ x + 1 = 0$ ist falsch.
+- $\forall x\ \exists y:\ x + y = 0$ ist wahr.
+- $\exists y\ \forall x:\ x + y = 0$ ist falsch.
+
+Am letzten Beispiel erkennt man, dass die Reihenfolge der Quantoren eine wichtige Rolle spielt:
+Die Aussage "Für alle $x$ gibt es ein $y$ \[...\]" ist eine grundlegend andere Aussage als "Es gibt ein y für alle x \[...\]".
