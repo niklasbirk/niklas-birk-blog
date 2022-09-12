@@ -58,13 +58,13 @@ Diese Seite richtet sich an jede Person, die Interesse an den Themen hat.
 Das Niveau ist allerdings Hochschulniveau und eignet sich daher nicht unbedingt für Schülerinnen oder Schüler, 
 die gerade für etwas lernen.
 Das sollte euch aber nicht davon abhalten, trotzdem mal reinzulesen, wenn es euch interessiert.
-Vielleicht denkt sich jemand von euch ja, dass das etwas ist, dass ihr in Zukunft machen wollt.
+Vielleicht denkt sich jemand von euch ja, dass das etwas ist, das ihr in Zukunft machen wollt.
 Im *MINT*-Bereich (**M**athematik, **I**nformatik, **N**aturwissenschaft, **T**echnik) gibt es viele Studienabbrecher,
 da das alles nicht gerade einfach ist und vielen die essenzielle Mathematik Schwierigkeiten bereitet.
 Doch wir brauchen viele von euch, die ein MINT-Studium absolvieren und vor allem Mädchen und Frauen sind weit unterrepräsentiert.
 Eine allgemein höhere Diversität im MINT-Bereich ist erstrebens- und wünschenswert.
 
-## Wie verarbeite ich das hier?
+## Wie verarbeitet ihr das hier?
 Das liegt ganz bei dir.
 Die Unterthemen sind mehr oder weniger chronologisch angeordnet, wie man sie auch im Studium einführt.
 Du kannst also bequem den Programmierteil beginnen, ohne vorher die Mathematik durchgearbeitet zu haben.
@@ -73,7 +73,7 @@ Solltest du schon Vorkenntnisse haben, kannst du natürlich auch ab da einsteige
 zurückblättern kann man immer, falls doch noch was fehlt.
 Auf den Übersichtsseiten der einzelnen Oberthemen findest du hierzu jedoch weitere Informationen.
 
-## Ich will mitmachen oder Fehler melden
+## Ihr wollt mitmachen oder Fehler melden?
 Das Projekt ist in erster Linie ein Projekt von *mir* für *euch*.
 Falls ihr jedoch Interesse an eine Art Gastbeitrag habt, ihr einen Fehler (Rechtschreibung, Grammatik, Inhaltlich, etc.)
 gefunden oder einen Themenwunsch habt, dann könnt ihr mich gerne unter 
