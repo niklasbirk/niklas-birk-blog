@@ -11,7 +11,7 @@ In diesem Teil möchte ich über folgende Themen sprechen:
 1. [Elemente der Logik](logik)
 2. [Mengenbildung und Mengenalgebra](mengen)
 3. [Relationen und Abbildungen](relationen)
-   1. [Kartesisches Produkt](relationen/kartesisches_produkt)
+   1. [Kartesisches Produkt](relationen/abbildungen)
    2. [Abbildungen](relationen/abbildungen)
    3. [Äquivalenzrelationen](relationen/aequivalenzrelationen)
    4. [Ordnungsrelationen](relationen/ordnungsrelationen)
