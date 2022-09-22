@@ -382,20 +382,21 @@ Sei $M$ Menge, dann heißt $2^M = \mathcal{P}(M) = \{ A\ |\ A \subseteq M \}$ *P
 :::
 Die Bezeichnung $2^M$ kommt daher, da die Anzahl der Elemente in der Potenzmenge "2 hoch der Anzahl der Elemente in M" entspricht.
 Wenn also $M$ drei Elemente enthält, dann hat $\mathcal{P}(M)$ $2^3 = 8$ Elemente.
-Über die Anzahl der Elemente einer Menge wird im Abschnitt [Endlichkeit und Kardinalzahlen] weiter thematisiert.
+Die Anzahl der Elemente einer Menge wird im Abschnitt [Endlichkeit und Kardinalzahlen](./endlichkeit) weiter thematisiert.
 
 #### Beispiele
 Gegeben sei $M = \{ a, b, c \}$.
 Dann ist $\mathcal{P}(M) = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, M \}$ Potenzmenge von $M$.
 Man beachte, dass insbesondere auch die leere Menge $\emptyset$ und die Menge $M$ selbst Teilmengen von $M$ sind.
-Man mache sich auch zusätzlich klar, dass $\emptyset \ne \{\emptyset\}$ ist.
 
 Gegeben sei $M = \{ \{a\}, \{b\} \}$.
-Dann ist $\mathcal{P}(M) = \{ \emptyset, \{\{a\}\}, \{\{b\}\}, \{\{a\}, \{b\}\}, M \}$ Potenzmenge von $M$.
+Dann ist $\mathcal{P}(M) = \{ \emptyset, \{\{a\}\}, \{\{b\}\}, M \}$ Potenzmenge von $M$.
 
 Gegeben sei $M = \{ \{a\} \}$.
 Dann ist $\mathcal{P}(M) = \{ \emptyset, M \}$ Potenzmenge von $M$. 
-Außerdem ist $\mathcal{P}(\mathcal{P}(M)) = \{ \emptyset, \{\emptyset\}, M, \mathcal{P}(M) \}$ Potenzmenge von $\mathcal{P}(M)$.
+Wenn man die Potenzmengenbildung weiter betreibt, 
+dann ist $\mathcal{P}(\mathcal{P}(M)) = \{ \emptyset, \{\emptyset\}, M, \mathcal{P}(M) \}$ Potenzmenge von $\mathcal{P}(M)$.
+Man mache sich klar, dass $\emptyset \ne \{\emptyset\}$ ist.
 
 Die Potenzmenge mit den üblichen Mengenoperationen $\cap$ und $\cup$ ist eine boolesche Algebra.
 
