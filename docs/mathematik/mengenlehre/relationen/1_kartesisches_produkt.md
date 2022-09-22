@@ -1,7 +1,7 @@
 ---
-title: Kartesisches Produkt
+title: Kartesisches Produkt und Abbildungen
 tags: [mathematik, mengenlehre, relation, kartesisches produkt]
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 WIP
