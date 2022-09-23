@@ -1,7 +1,7 @@
 ---
 title: Ordnungsrelationen
 tags: [mathematik, mengenlehre, relation, ordnung, ordnungsrelation]
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 WIP
