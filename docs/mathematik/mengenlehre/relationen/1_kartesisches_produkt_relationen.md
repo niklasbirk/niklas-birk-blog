@@ -167,7 +167,7 @@ $R$ ist Relation
 Wenn nun eine Relation gegeben ist, dann möchte man vielleicht die Frage stellen "Welche $y$-Werte werden für ein $x$ angenommen?"
 und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupel angeben zu müssen.
 
-:::note 
+:::note Schreibweise
 
 Sei $R$ Relation.
 $$
