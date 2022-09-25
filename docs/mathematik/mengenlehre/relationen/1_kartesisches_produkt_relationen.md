@@ -60,6 +60,13 @@ $$
     A \times B\ :=\ \{ (a,b)\ |\ a \in A \wedge b \in B \}
 $$
 
+Mit 
+- $A^0 := \{ \emptyset \}$
+- $A^1 := A$
+- $A^{n+1} := A^n \times A$ 
+
+erhalten wir die *n-fache kartesische Potenz*.
+
 :::
 
 ## Relationen
@@ -281,3 +288,7 @@ Bei Beweisen, bei denen man die Äquivalenz von zwei Aussagen $A$ und $B$ zeigen
 unterteilt man diese in die Richtungen "$A \Rightarrow B$" und "$B \Rightarrow A$".
 In Fällen, wie hier, bei denen man direkt die Äquivalenz "$\Leftrightarrow$" nutzen kann fällt die direkte Unterteilung weg -
 aber es ist eben nicht immer so einfach.
+
+Relationen lassen sich weiter unterteilen in spezieller Relationen.
+Diese haben zusätzliche Eigenschaften.
+Drei unglaublich wichtige Relationen werden in den folgenden Kapiteln vorgestellt.
