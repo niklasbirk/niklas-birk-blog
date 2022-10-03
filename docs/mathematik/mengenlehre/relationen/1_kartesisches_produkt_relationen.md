@@ -167,7 +167,7 @@ $R$ ist Relation
 Wenn nun eine Relation gegeben ist, dann möchte man vielleicht die Frage stellen "Welche $y$-Werte werden für ein $x$ angenommen?"
 und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupel angeben zu müssen.
 
-:::note Schreibweise
+:::note Schreibweise 1
 
 Sei $R$ Relation.
 $$
@@ -188,6 +188,35 @@ $$
       R(5) &= \emptyset
    \end{align*}
 $$
+
+Diese Schreibweise erinnert vielleicht schon etwas an die Schreibweise für Funktionen.
+Es gibt noch eine andere Schreibweise, die bei allgemeinen Relationen noch üblicher ist.
+Relationen sollen eine Beziehung zwischen den Elementen ausdrücken, z.B. die Relation "*ist verwandt mit*".
+Man erkennt an diesem Beispiel schon einen gewissen Aufbau: "$x$ ist verwandt mit $y$".
+Häufig schreibt man in so einem Fall also nicht $(x,y) \in R$ oder $R(x) = \{y, (\dots)\}$, sondern zieht die
+Relationsbezeichnung in die Mitte:
+
+:::note Schreibweise 2
+
+Sei $R$ Relation.
+$$
+    x R y\ :=\ (x,y) \in R
+$$
+
+:::
+
+#### Beispiele
+Sei $R$ jeweils die Relation in den Stichpunkten.
+Statt $x R y$ schreibt man in konkreten Fällen dann:
+- $x$ ist verwandt mit $y$
+- $x < y$
+- $x + y$
+
+Für eine gegebene Relation $R$ kann man sich also ein Symbol ausdenken und es hinschreiben.
+Das $<$ wird gerne für die übliche "*kleiner als*"-Ordnungsrelation verwendet oder das $+$ für die *Operation* "*Addition*".
+Wir werden uns später noch mit Ordnungsrelationen und Operationen beschäftigen.
+Aber an dieser Stelle sind es nur symbolische Beispiele, wieso es sinnvoll ist, manche Relationen in dieser Schreibweise zu präsentieren.
+
 
 ### Verkettung und Inverse
 Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleichen Mengen korrespondieren - in dieser Reihenfolge.
