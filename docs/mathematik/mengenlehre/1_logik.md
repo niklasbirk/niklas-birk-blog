@@ -509,13 +509,13 @@ Durch ein Quantor ist eine Aussagenform direkt eine Aussage:
 #### Beispiele
 Sei $G = \mathbb{N}$ Grundbereich und $H(x) := ``x + 1 = 3''$ Aussagenform.
 Durch Quantifizierung entstehen folgende Aussagen:
-- $\forall x (x + 1 = 3)$ - "Für alle $x$ aus $G$ gilt $x + 1 = 3" ist eine falsche Aussage.
-- $\exists x (x + 1 = 3)$ - "Es existiert ein $x$ aus $G$ mit $x + 1 = 3" ist eine wahre Aussage.
+- $\forall x (x + 1 = 3)$ - "Für alle $x$ aus $G$ gilt $x + 1 = 3$" ist eine falsche Aussage.
+- $\exists x (x + 1 = 3)$ - "Es existiert ein $x$ aus $G$ mit $x + 1 = 3$" ist eine wahre Aussage.
 
 Sei $G = \mathbb{N}$ und $H(x) := ``2x \ge x''$.
 Durch Quantifizierung entstehen folgende Aussagen:
-- $\forall x (2x \ge x)$ - "Für alle $x$ aus $G$ gilt $2x \ge x" ist eine wahre Aussage.
-- $\exists x (2x \ge x)$ - "Es existiert ein $x$ aus $G$ mit $2x \ge x" ist eine wahre Aussage.
+- $\forall x (2x \ge x)$ - "Für alle $x$ aus $G$ gilt $2x \ge x$" ist eine wahre Aussage.
+- $\exists x (2x \ge x)$ - "Es existiert ein $x$ aus $G$ mit $2x \ge x$" ist eine wahre Aussage.
 
 Man beachte hierbei, dass es bei einer Existenzaussage heißt "Es existiert **mindestens** ein $x\ \dots$".
 Im Beispiel sieht man, dass mehrere $x$ die letzte Aussage erfüllen.
