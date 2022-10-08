@@ -34,6 +34,7 @@ Allgemein lassen sich rekursiv n-Tupel wie folgt definieren:
 - n-Tupel: $(x_1, x_2, \dots, x_n) = ((x_1, x_2, \dots, x_{n-1}), x_n)$
 
 :::
+
 n-Tupel lassen sich also auf die Mengendarstellungen der 2-Tupel zurückführen.
 In der Typentheorie nach Russell, die im Kapitel über [Mengen](../mengen) eingeführt wurde ist dies allerdings nicht erlaubt.
 Denn schon bei einem 3-Tupel gibt es eine Vermischung verschiedener Mengenstufen:
