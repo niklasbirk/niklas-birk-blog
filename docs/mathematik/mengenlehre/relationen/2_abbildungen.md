@@ -261,7 +261,7 @@ Weitere Beispiele:
   - $3^4 = 81$
 - $\circ:\ \text{Abb}(A,A)^2 \rightarrow \text{Abb}(A,A)$ als Komposition: $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad h$  
   $\text{Abb}(A,A)$ ist dabei die Menge aller Abbildungen von $A$ in $A$.
-  - Mit $f(x) = x^2,\ g(x) = x+2$ ist $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad g(x^2) = x^2+2
+  - Mit $f(x) = x^2,\ g(x) = x+2$ ist $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad g(x^2) = x^2+2$
   - Mit $f(x) = \ln(x) + \frac{\pi}{2},\ g(x) = \sin x$ ist 
     $$
     \begin{align*}
