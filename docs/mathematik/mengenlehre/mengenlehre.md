@@ -1,5 +1,5 @@
 ---
-title: Mengenlehre?
+title: Mengenlehre
 tags: [mathematik, mengenlehre, menge, definition]
 sidebar_position: 1
 ---
