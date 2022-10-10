@@ -1,7 +1,7 @@
 ---
 title: Differentialrechnung
 tags: [mathematik, mengenlehre, analysis, differentiation, differentialrechnung, differential, ableitung]
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 WIP
