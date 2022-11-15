@@ -122,7 +122,7 @@ const config = {
                             },
                             {
                                 label: 'Mastodon',
-                                href: 'https://mastodon.social/web/@SirNik',
+                                href: 'https://mathstodon.xyz/web/@SirNik',
                             },
                         ],
                     },
@@ -140,10 +140,6 @@ const config = {
                             {
                                 label: 'Gitea',
                                 href: 'https://git.niklas-birk.de',
-                            },
-                            {
-                                label: 'Surveys',
-                                href: 'https://survey.niklas-birk.de',
                             },
                         ],
                     },
