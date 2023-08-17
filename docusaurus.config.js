@@ -124,15 +124,15 @@ const config = {
                                 label: 'Mastodon',
                                 href: 'https://mathstodon.xyz/web/@SirNik',
                             },
+                            {
+                                label: 'Twitch',
+                                href: 'https://www.twitch.tv/sirnikodtw',
+                            },
                         ],
                     },
                     {
-                        title: 'More',
+                        title: 'Mehr von mir',
                         items: [
-                            // {
-                            //     label: 'Blog',
-                            //     to: '/blog',
-                            // },
                             {
                                 label: 'Website',
                                 href: 'https://www.niklas-birk.de',
@@ -140,6 +140,15 @@ const config = {
                             {
                                 label: 'Gitea',
                                 href: 'https://git.niklas-birk.de',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Legal',
+                        items: [
+                            {
+                                label: 'Impressum',
+                                href: 'https://www.niklas-birk.de/impressum.html',
                             },
                         ],
                     },

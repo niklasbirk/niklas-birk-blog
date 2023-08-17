@@ -24,9 +24,9 @@ const FeatureList = [
                     Verarbeitung befasst.</p>
                 <p>
                     <q><cite>In der Informatik geht es genau so wenig um Computer, wie in der Astronomie um
-                        Teleskope.</cite></q>
+                        Teleskope.</cite></q><br />
+                    - Edsger Wybe Dijkstra
                 </p>
-                - Edsger Wybe Dijkstra
             </>
         ),
     },
