@@ -110,7 +110,7 @@ In der Aussagenlogik gilt das *Zweiwertigkeitsprinzip*:
 Alle Aussagen sind entweder *wahr* ($w$ oder $1$) oder *falsch* ($f$ oder $0$)
 
 > Tertium non datur (dt.: Ein Drittes gibt es nicht)
-> 
+>
 > — Satz vom ausgeschlossenem Dritten
 
 :::
@@ -144,16 +144,16 @@ Eine Zeile dieser Wahrheitstabelle nennt man auch *Interpretation* oder *Belegun
 #### Beispiele
 Wählen wir folgende Aussagen $A = "3 < 5"$ und $B = "3 + 2 = 1"$.
 $A$ ist eine wahre Aussage, während $B$ eine falsche Aussage ist.
-Wir bilden nun die neue Aussage $A \wedge B$. 
+Wir bilden nun die neue Aussage $A \wedge B$.
 Ist die neue Aussage wahr oder falsch?
 Dazu schauen wir in die Wahrheitstafel bei der Interpretation $w, f$ und sehen, dass $f$ gilt - also ist $A \wedge B$ eine falsche Aussage.
 
-$\neg (3 + 5 = 0)$ ist eine wahre Aussage, denn $3+5$ ist nicht $0$, sondern $8$. 
+$\neg (3 + 5 = 0)$ ist eine wahre Aussage, denn $3+5$ ist nicht $0$, sondern $8$.
 In diesem Fall könnte man statt $\neg (3 + 5 = 0)$ auch $3 + 5 \ne 0$ schreiben.
 Die logische Negation macht das $=$ also zu einem $\ne$.
 
 Die Implikation hängt eng mit der logischen Schlussfolgerung zusammen, durch das sogenannte *Deduktionstheorem*.
-Allerdings wird hierauf nicht näher eingegangen, lediglich der Begriff *folgern* wird hier nun verwendet, 
+Allerdings wird hierauf nicht näher eingegangen, lediglich der Begriff *folgern* wird hier nun verwendet,
 wenngleich nicht ganz korrekt, da wir damit Meta- und Objektebene vermischen.
 Doch wie bereits angemerkt, nimmt man es damit nicht immer so genau, wenn man nicht gerade Logik wirklich formal betreibt.
 Wenn wir uns die Wahrheitstabelle der Implikation anschauen, dann stellen wir fest, dass wir aus etwas Wahrem
@@ -165,8 +165,8 @@ nie was Falsches folgern dürfen, aber aus etwas Falschem stets was Wahres:
 Bei $\vee$ (gesprochen *oder*) ist anzumerken, dass es sich um ein *Inklusiv-Oder* handelt, d.h. die Gesamtaussage ist genau dann wahr,
 wenn mindestens eine Teilaussage wahr ist.
 Das Inklusiv-Oder ist wie ein "Milch *oder* Zucker" beim Kaffee zu verstehen - man kann auch beides nehmen.
-Im Gegensatz dazu steht das *Exklusiv-Oder* (*Antivalenz* genannt, $\not\leftrightarrow$ geschrieben, 
-"entweder $A$ oder $B$" gesprochen), das nur dann wahr wird, wenn genau eine der beiden Teilaussagen wahr ist. 
+Im Gegensatz dazu steht das *Exklusiv-Oder* (*Antivalenz* genannt, $\not\leftrightarrow$ geschrieben,
+"entweder $A$ oder $B$" gesprochen), das nur dann wahr wird, wenn genau eine der beiden Teilaussagen wahr ist.
 Die Antivalenz ist auch ein wichtiger Junktor, der hier aber nicht näher eingeführt wird.
 
 Die Implikation bereitet vielen am Anfang Bauchschmerzen, da sie dem umgangssprachlichen "wenn ..., dann ..." auf den ersten Blick nicht vollkommen entspricht.
@@ -220,7 +220,7 @@ Man nennt so eine Formel auch *Kontradiktion* oder *Widerspruch*.
 :::
 
 #### Beispiele
-Oben haben wir bereits eine Tautologie gesehen. 
+Oben haben wir bereits eine Tautologie gesehen.
 Eine weitere wäre:
 $$
 \begin{array}{c||c}
@@ -242,12 +242,12 @@ $$
 \end{array}
 $$
 Das ist eine Kontradiktion, sie ist immer falsch.
-Diese Formel nennt man auch *Widerspruch*. 
+Diese Formel nennt man auch *Widerspruch*.
 Es kann $A$ *und* $\neg A$ nie gleichzeitig gelten.
 Wenn also bspw. jemand behauptet "Ich wohne in Berlin", er aber gleichzeitig sagt "Ich wohne nicht in Berlin", dann widerspricht er sich ja selbst.
 
 ### Semantische Äquivalenz
-Wenn wir über verschiedene Formeln reden und bestimmen wollen, ob diese Formeln das gleiche Aussagen, 
+Wenn wir über verschiedene Formeln reden und bestimmen wollen, ob diese Formeln das gleiche Aussagen,
 dann ist das die Frage nach der *semantischen Äquivalenz*.
 
 :::note Semantische Äquivalenz
@@ -287,143 +287,143 @@ Die tatsächliche semantische Äquivalenz lässt sich leicht durch aufstellen ei
 :::tip Wichtige semantische Äquivalenzen
 
 1. $$
-\begin{align*} 
-    \begin{aligned} 
-        x \wedge y &\equiv y \wedge x\\
-        x \vee y &\equiv y \vee x\\
-        x \leftrightarrow y &\equiv y \leftrightarrow x 
-    \end{aligned}
-    &&\text{Kommutativität}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \wedge y &\equiv y \wedge x\\
+            x \vee y &\equiv y \vee x\\
+            x \leftrightarrow y &\equiv y \leftrightarrow x
+        \end{aligned}
+        &&\text{Kommutativität}
+    \end{align*}
+    $$
 2. $$
-\begin{align*}
-    \begin{aligned} 
-        x \wedge (y \wedge z) &\equiv (x \wedge y) \wedge z\\
-        x \vee (y \vee z) &\equiv (x \vee y) \vee z\\
-        x \leftrightarrow (y \leftrightarrow z)
-        &\equiv (x \leftrightarrow y) \leftrightarrow z
-    \end{aligned}
-    &&\text{Assoziativität}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \wedge (y \wedge z) &\equiv (x \wedge y) \wedge z\\
+            x \vee (y \vee z) &\equiv (x \vee y) \vee z\\
+            x \leftrightarrow (y \leftrightarrow z)
+            &\equiv (x \leftrightarrow y) \leftrightarrow z
+        \end{aligned}
+        &&\text{Assoziativität}
+    \end{align*}
+    $$
 3. $$
-\begin{align*}
-    \begin{aligned}
-        x \wedge (y \vee z) &\equiv (x \wedge y) \vee (x \wedge z)\\
-        x \vee (y \wedge z) &\equiv (x \vee y) \wedge (x \vee z)
-    \end{aligned}
-    &&\text{Distributivität}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \wedge (y \vee z) &\equiv (x \wedge y) \vee (x \wedge z)\\
+            x \vee (y \wedge z) &\equiv (x \vee y) \wedge (x \vee z)
+        \end{aligned}
+        &&\text{Distributivität}
+    \end{align*}
+    $$
 4. $$
-\begin{align*}
-    \begin{aligned}
-        x \wedge (x \vee y) &\equiv x\\
-        x \vee (x \wedge y) &\equiv x
-    \end{aligned}
-    &&\text{Absorption}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \wedge (x \vee y) &\equiv x\\
+            x \vee (x \wedge y) &\equiv x
+        \end{aligned}
+        &&\text{Absorption}
+    \end{align*}
+    $$
 5. $$
-\begin{align*}
-    \begin{aligned}
-        x \wedge x &\equiv x\\
-        x \vee x &\equiv x
-    \end{aligned}
-    &&\text{Idempotenz}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \wedge x &\equiv x\\
+            x \vee x &\equiv x
+        \end{aligned}
+        &&\text{Idempotenz}
+    \end{align*}
+    $$
 6. $$
-\begin{align*}
-    \begin{aligned}
-        \neg(\neg x) &\equiv x\\
-        \neg(x \rightarrow y) &\equiv x \wedge \neg y\\
-        \neg(x \leftrightarrow y)
-        &\equiv \neg x \leftrightarrow y
-        \equiv x \leftrightarrow \neg y
-    \end{aligned}
-    &&\text{Verneinung}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            \neg(\neg x) &\equiv x\\
+            \neg(x \rightarrow y) &\equiv x \wedge \neg y\\
+            \neg(x \leftrightarrow y)
+            &\equiv \neg x \leftrightarrow y
+            \equiv x \leftrightarrow \neg y
+        \end{aligned}
+        &&\text{Verneinung}
+    \end{align*}
+    $$
 7. $$
-\begin{align*}
-    \begin{aligned}
-        \neg(x \wedge y) &\equiv \neg x \vee \neg y\\
-        \neg(x \vee y) &\equiv \neg x \wedge \neg y
-     \end{aligned}
-    &&\text{De Morgan'sche Regeln}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            \neg(x \wedge y) &\equiv \neg x \vee \neg y\\
+            \neg(x \vee y) &\equiv \neg x \wedge \neg y
+         \end{aligned}
+        &&\text{De Morgan'sche Regeln}
+    \end{align*}
+    $$
 8. $$
-\begin{align*}
-    \begin{aligned}
-           x \leftrightarrow y &\equiv (x \rightarrow y) \wedge (y \rightarrow x)\\
-           x \rightarrow y &\equiv \neg x \vee y\\
-           x \wedge y &\equiv \neg(\neg x \vee \neg y)\\
-           x \vee y &\equiv \neg(\neg x \wedge \neg y)
-    \end{aligned}
-    &&\text{Elimination}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+               x \leftrightarrow y &\equiv (x \rightarrow y) \wedge (y \rightarrow x)\\
+               x \rightarrow y &\equiv \neg x \vee y\\
+               x \wedge y &\equiv \neg(\neg x \vee \neg y)\\
+               x \vee y &\equiv \neg(\neg x \wedge \neg y)
+        \end{aligned}
+        &&\text{Elimination}
+    \end{align*}
+    $$
 9. $$
-\begin{align*}
-    \begin{aligned}
-        x \rightarrow y \equiv \neg y \rightarrow \neg x
-    \end{aligned}
-    &&\text{Kontraposition}
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+            x \rightarrow y \equiv \neg y \rightarrow \neg x
+        \end{aligned}
+        &&\text{Kontraposition}
+    \end{align*}
+    $$
 10. $$
-\begin{align*}
-    \begin{aligned}
-       \neg f &\equiv w\\
-       \neg w &\equiv f
-    \end{aligned}
-    &&
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+           \neg f &\equiv w\\
+           \neg w &\equiv f
+        \end{aligned}
+        &&
+    \end{align*}
+    $$
 11. $$
-\begin{align*}
-    \begin{aligned}
-       x \wedge \neg x &\equiv f\\
-       x \vee \neg x &\equiv w\\
-       x \leftrightarrow \neg x &\equiv f
-    \end{aligned}
-    &&
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+           x \wedge \neg x &\equiv f\\
+           x \vee \neg x &\equiv w\\
+           x \leftrightarrow \neg x &\equiv f
+        \end{aligned}
+        &&
+    \end{align*}
+    $$
 12. $$
-\begin{align*}
-    \begin{aligned}
-       w \wedge x &\equiv x\\
-       f \wedge x &\equiv f\\
-       w \vee x &\equiv w\\
-       f \vee x &\equiv x
-    \end{aligned}
-    &&
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+           w \wedge x &\equiv x\\
+           f \wedge x &\equiv f\\
+           w \vee x &\equiv w\\
+           f \vee x &\equiv x
+        \end{aligned}
+        &&
+    \end{align*}
+    $$
 13. $$
-\begin{align*}
-    \begin{aligned}
-       f \rightarrow x &\equiv w\\
-       w \rightarrow x &\equiv x\\
-       x \rightarrow f &\equiv \neg x\\
-       x \rightarrow w &\equiv w
-    \end{aligned}
-    &&
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+           f \rightarrow x &\equiv w\\
+           w \rightarrow x &\equiv x\\
+           x \rightarrow f &\equiv \neg x\\
+           x \rightarrow w &\equiv w
+        \end{aligned}
+        &&
+    \end{align*}
+    $$
 14. $$
-\begin{align*}
-    \begin{aligned}
-       f \leftrightarrow x &\equiv \neg x\\
-       w \leftrightarrow x &\equiv x
-    \end{aligned}
-    &&
-\end{align*}
-$$
+    \begin{align*}
+        \begin{aligned}
+           f \leftrightarrow x &\equiv \neg x\\
+           w \leftrightarrow x &\equiv x
+        \end{aligned}
+        &&
+    \end{align*}
+    $$
 
 :::
 
@@ -444,7 +444,7 @@ $$
     \overset{\text{11.}}{\equiv}\quad && &w
 \end{alignat*}
 $$
-In diesem Fall konnten wir nur durch umformen, also insbesondere ohne Wahrheitstabelle, zeigen, 
+In diesem Fall konnten wir nur durch umformen, also insbesondere ohne Wahrheitstabelle, zeigen,
 dass es sich um eine Tautologie handelt, da die ursprüngliche Formel semantisch äquivalent zu $w$ ist.
 Die Ausgangsformel nennt man auch *Kettenschluss*.
 
@@ -472,7 +472,7 @@ Durch Einsetzen von Objekten aus $G$ **für alle** Variablen wird $H$ zu einer A
 Man schreibt $H(x)$ oder $H(x_1, x_2, \dots, x_n)$ für eine Aussagenform $H$ mit den Variablen $x$ bzw. $x_1, x_2, \dots, x_n$.
 Aussagenformen wurden bereits in der [Aussagenlogik](#syntax)) oben eingeführt, ohne sie konkret zu benennen:
 > Durch das Ersetzen der Aussagenvariablen durch konkrete Aussagen, erhält man eine \[$\dots$\] Aussage.
- 
+
 Das Zusammensetzen von Aussagen(-formen) mit den entsprechenden Junktoren ist analog zur Aussagenlogik.
 
 #### Beispiele
@@ -534,7 +534,7 @@ $$
 
 Eine Aussagenform wird natürlich nur dann zu einer Aussage, wenn alle Variablen gebunden sind oder, falls freie Variablen existieren,
 diese durch eine konkrete Aussage ersetzt wurden.
-Folgende Beispiele sind nur Aussagenformen, da nicht alle Variablen gebunden vorkommen.  
+Folgende Beispiele sind nur Aussagenformen, da nicht alle Variablen gebunden vorkommen.
 Sei $G = \mathbb{Z}$.
 - $x + y = 0$
 - $\forall x:\ x + y = 0$
