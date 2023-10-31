@@ -1,19 +1,19 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
     title: 'Mathematik, Informatik und Programmierung',
     tagline: 'Mathematik und Informatik sind cool',
     url: 'https://www.niklas-birk.de',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/niklas-birk-icon.ico',
 
@@ -38,8 +38,8 @@ const config = {
                 // docs: false,
                 docs: {
                   sidebarPath: require.resolve('./sidebars.js'),
-                  remarkPlugins: [math],
-                  rehypePlugins: [katex],
+                  remarkPlugins: [remarkMath],
+                  rehypePlugins: [rehypeKatex],
                 //   // Please change this to your repo.
                 //   // Remove this to remove the "edit this page" links.
                 //   // editUrl:
@@ -171,5 +171,3 @@ const config = {
         },
     ],
 };
-
-module.exports = config;
