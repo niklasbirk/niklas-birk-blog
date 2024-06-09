@@ -118,7 +118,7 @@ export default {
                         items: [
                             {
                                 label: 'Twitter',
-                                href: 'https://twitter.com/SirNik_OdTW',
+                                href: 'https://twitter.com/theoremofnik',
                             },
                             {
                                 label: 'Mastodon',
@@ -126,7 +126,7 @@ export default {
                             },
                             {
                                 label: 'Twitch',
-                                href: 'https://www.twitch.tv/sirnikodtw',
+                                href: 'https://www.twitch.tv/theoremofnik',
                             },
                         ],
                     },
