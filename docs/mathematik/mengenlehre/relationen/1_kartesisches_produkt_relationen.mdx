@@ -227,9 +227,9 @@ Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleic
 Seien $R \subseteq A \times B$ und $K \subseteq B \times C$ Relationen.
 Dann ist die Verkettung von $R$ mit $K$ definiert als:
 $$
-   F \circ K\ :=\ \{ (x,z)\ |\ \exists y \in B:\ (x,y) \in R \wedge (y,z) \in K \}
+   R \circ K\ :=\ \{ (x,z)\ |\ \exists y \in B:\ (x,y) \in R \wedge (y,z) \in K \}
 $$
-Also ist $F \circ K \subseteq A \times C$.
+Also ist $R \circ K \subseteq A \times C$.
 
 :::
 
@@ -243,7 +243,7 @@ Als Bild veranschaulicht:
 
 Die Verkettung sind dann die Paare, die gebildet werden können, wenn man alle möglichen Pfeile in den schaubildern entlang geht.
 $$
-    F \circ K = \{(1, \alpha), (1, \beta), (1, \gamma), (2, \beta), (3, \beta)\}
+    R \circ K = \{(1, \alpha), (1, \beta), (1, \gamma), (2, \beta), (3, \beta)\}
 $$
 Im folgenden Schaubild sind die einzelnen Relationen aufgeführt, nur dieses sind die Pfeile rot eingefärbt,
 die für die Verkettung relevant sind.
@@ -254,7 +254,7 @@ Rechts im Bild ist dann nur noch das Resultat der Verkettung $R \circ K$ zu sehe
 
 Relationen kann man auch umkehren.
 Die Rolle der ersten Elemente eines Tupels vertauscht sich dann mit den zweiten Elementen.
-Das heißt, Wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das *Inverse* dazu $(y,x) \in R^{-1}$.
+Das heißt, wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das *Inverse* dazu $(y,x) \in R^{-1}$.
 
 :::note Inverse Relation
 
@@ -272,7 +272,7 @@ Also wenn $R \subseteq A \times B$, dann ist $R^{-1} \subseteq B \times A$.
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
 Das Inverse $R^{-1}$ von $R$ ist jetzt jedes Paar aus $R$ umgedreht:
 $$
-    R^{-1} = \{ a,1), (b,2), (b,3), (d,1), (d,4) \}
+    R^{-1} = \{ (a,1), (b,2), (b,3), (d,1), (d,4) \}
 $$
 Veranschaulicht:
 
