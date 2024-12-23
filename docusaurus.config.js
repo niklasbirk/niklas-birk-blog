@@ -170,4 +170,7 @@ export default {
             crossorigin: 'anonymous',
         },
     ],
+    future: {
+        experimental_faster: true,
+    }
 };
