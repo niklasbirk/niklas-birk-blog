@@ -87,7 +87,7 @@ export default {
                     //     position: 'left'
                     // },
                     {
-                        href: 'https://git.niklas-birk.de/niklas/niklas_birk_blog',
+                        href: 'https://git.niklas-birk.de/niklas/niklas_birk_math',
                         label: 'Zum Code',
                         position: 'right',
                     },
