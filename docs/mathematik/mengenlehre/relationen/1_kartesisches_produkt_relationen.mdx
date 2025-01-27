@@ -14,7 +14,7 @@ möchte Mengen miteinander in eine gewisse Verbindung bringen, ohne sie einfach 
 
 Ein *geordnetes Paar* (*2-Tupel*) mit den Elementen $a$ und $b$ ist wie folgt als Menge definiert:
 $$
-    (a, b)\ :=\ \{ \overbrace{\{a, b\}}^{\text{Elemente des Tupels}}, \underbrace{\{a\}}_{\text{Erstes Element}} \}
+    (a, b)\ \coloneqq\ \{ \overbrace{\{a, b\}}^{\text{Elemente des Tupels}}, \underbrace{\{a\}}_{\text{Erstes Element}} \}
 $$ 
 
 :::
@@ -58,13 +58,13 @@ Die Menge aller Tupel von Mengen nennt man *kartesisches Produkt*:
 
 Seien $A$ und $B$ Mengen, dann ist das *kartesische Produkt* der Mengen $A$ und $B$ definiert als
 $$
-    A \times B\ :=\ \{ (a,b)\ |\ a \in A \wedge b \in B \}
+    A \times B\ \coloneqq\ \{ (a,b)\ |\ a \in A \wedge b \in B \}
 $$
 
 Mit 
-- $A^0 := \{ \emptyset \}$
-- $A^1 := A$
-- $A^{n+1} := A^n \times A$ 
+- $A^0 \coloneqq \{ \emptyset \}$
+- $A^1 \coloneqq A$
+- $A^{n+1} \coloneqq A^n \times A$
 
 erhalten wir die *n-fache kartesische Potenz*.
 
@@ -77,7 +77,7 @@ Daraus können wir nun eine Teilmenge betrachten.
 :::note Relation
 
 Seien $A$, $B$ Mengen.
-Man nennt $R$ *Relation* oder *Korrespondenz* __aus__ $A$ __in__ $B$ $:=\ R \subseteq A \times B$
+Man nennt $R$ *Relation* oder *Korrespondenz* __aus__ $A$ __in__ $B$ $\coloneqq\ R \subseteq A \times B$
 
 :::
 
@@ -117,12 +117,12 @@ Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweit
 
 - *Definitionsbereich* von $R$: 
    $$
-      D(R)\ :=\ \{ x\ |\ x \in A \wedge \exists y \in B:\ (x,y) \in R \}
+      D(R)\ \coloneqq\ \{ x\ |\ x \in A \wedge \exists y \in B \colon (x,y) \in R \}
    $$
    Der Definitionsbereich von $R$ umfasst also alle Elemente $x$ aus $A$, für die es ein $y$ aus $B$ gibt.
 - *Wertebereich* oder *Bild* von $R$:
    $$
-      W(R)\ :=\ \{ y\ |\ y \in B \wedge \exists x \in A:\ (x,y) \in R \}
+      W(R)\ \coloneqq\ \{ y\ |\ y \in B \wedge \exists x \in A \colon (x,y) \in R \}
    $$
    Der Wertebereich oder das Bild von $R$ umfasst also alle Elemente $y$ aus $B$, für die es ein $x$ aus $A$ gibt.
 
@@ -159,9 +159,9 @@ Je nachdem, ob der Definitions- oder Wertebereich die gesamte Menge $A$ bzw. $B$
 :::note Sprechweisen
 
 $R$ ist Relation
-- "*__von__* $A$ *in* $B$" $:=\ D(R) = A$
-- "*aus* $A$ *__auf__* $B$" $:=\ W(R) = B$
-- "*__von__* $A$ *__auf__* $B$" $:=\ D(R) = A \wedge W(R) = B$
+- "*__von__* $A$ *in* $B$" $\coloneqq\ D(R) = A$
+- "*aus* $A$ *__auf__* $B$" $\coloneqq\ W(R) = B$
+- "*__von__* $A$ *__auf__* $B$" $\coloneqq\ D(R) = A \wedge W(R) = B$
 
 :::
 
@@ -172,7 +172,7 @@ und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupe
 
 Sei $R$ Relation.
 $$
-   R(x)\ :=\ \{ y\ |\ y \in B \wedge (x,y) \in R \}
+   R(x)\ \coloneqq\ \{ y\ |\ y \in B \wedge (x,y) \in R \}
 $$
 
 :::
@@ -201,7 +201,7 @@ Relationsbezeichnung in die Mitte:
 
 Sei $R$ Relation.
 $$
-    x R y\ :=\ (x,y) \in R
+    x R y\ \coloneqq\ (x,y) \in R
 $$
 
 :::
@@ -227,7 +227,7 @@ Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleic
 Seien $R \subseteq A \times B$ und $K \subseteq B \times C$ Relationen.
 Dann ist die Verkettung von $R$ mit $K$ definiert als:
 $$
-   R \circ K\ :=\ \{ (x,z)\ |\ \exists y \in B:\ (x,y) \in R \wedge (y,z) \in K \}
+   R \circ K\ \coloneqq\ \{ (x,z)\ |\ \exists y \in B \colon (x,y) \in R \wedge (y,z) \in K \}
 $$
 Also ist $R \circ K \subseteq A \times C$.
 
@@ -260,7 +260,7 @@ Das heißt, wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das
 
 Gegeben sei $R \subseteq A \times B$
 $$
-    R^{-1}\ :=\ \{(y,x)\ |\ (x,y) \in R \} \subset B \times A
+    R^{-1}\ \coloneqq\ \{(y,x)\ |\ (x,y) \in R \} \subset B \times A
 $$
 ist die *inverse Relation* zu $R$.
 
@@ -301,9 +301,9 @@ $$
 \begin{alignat*}{2}
     \quad && &(z,x) \in (R \circ K)^{-1}\\
     \overset{\text{Def. } \square^{-1}}{\Longleftrightarrow}\quad && &(x,z) \in R \circ K\\
-    \overset{\text{Def. } \circ}{\Longleftrightarrow}\quad && &\exists y:\ (x,y) \in R \wedge (y,z) \in K\\
-    \overset{\text{Def. } \square^{-1}}{\Longleftrightarrow}\quad && &\exists y:\ (y,x) \in R^{-1} \wedge (z,y) \in K^{-1}\\
-    \overset{\text{Kom. } \wedge}{\Longleftrightarrow}\quad && &\exists y:\ (z,y) \in K^{-1} \wedge (y,x) \in R^{-1}\\
+    \overset{\text{Def. } \circ}{\Longleftrightarrow}\quad && &\exists y \colon (x,y) \in R \wedge (y,z) \in K\\
+    \overset{\text{Def. } \square^{-1}}{\Longleftrightarrow}\quad && &\exists y \colon (y,x) \in R^{-1} \wedge (z,y) \in K^{-1}\\
+    \overset{\text{Kom. } \wedge}{\Longleftrightarrow}\quad && &\exists y \colon (z,y) \in K^{-1} \wedge (y,x) \in R^{-1}\\
     \overset{\text{Def. } \circ}{\Longleftrightarrow}\quad && &(z,x) \in K^{-1} \circ R^{-1}
         \qquad\qquad\qquad\qquad\blacksquare
 \end{alignat*}

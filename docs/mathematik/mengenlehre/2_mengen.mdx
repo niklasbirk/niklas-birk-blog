@@ -48,7 +48,7 @@ Folgendes Axiom bildet eine Brücke zur Logik:
 Sei $H(M^n)$ Aussage über Mengen $n$-ter Stufe.
 $$
     \begin{equation*}
-        \exists M^{n+1}\ \forall M^n:\ M^n \in M^{n+1} \leftrightarrow H(M^n),
+        \exists M^{n+1}\ \forall M^n \colon M^n \in M^{n+1} \leftrightarrow H(M^n),
     \end{equation*}
 $$
 wobei $M^{n+1}$ nicht in $H(M^n)$ vorkommt.
@@ -60,11 +60,11 @@ Das Mengenbildungsaxiom sagt aus, dass es eine Menge $M^{n+1}$ gibt, die aus den
 Sei $n = 0$, dann können wir die Aussage im Satz mit den üblichen Benennungen wie folgt schreiben:
 $$
     \begin{equation*}
-        \exists A\ \forall x:\ x \in M \leftrightarrow H(x).
+        \exists A\ \forall x \colon x \in M \leftrightarrow H(x).
     \end{equation*}
 $$
 "$M^{n+1}$ kommt nicht in $H(M^n)$ vor" bedeutet, dass in $H(M^n)$ nirgends das Symbol $M^{n+1}$ auftauchen darf.
-Deswegen ist $\exists A\ \forall x:\ x \in M \leftrightarrow x \notin M$, also ein Widerspruch, ausgeschlossen.
+Deswegen ist $\exists A\ \forall x \colon x \in M \leftrightarrow x \notin M$, also ein Widerspruch, ausgeschlossen.
 Denn in $H(x) = \text{"}x \notin M\text{"}$ taucht ja $M$ auf und das ist nicht erlaubt
 
 Sei $n = 0$ und $H(x) = \text{"} x \text{ ist eine gerade natürliche Zahl"}$.
@@ -83,14 +83,14 @@ Weitere Beispiele sind:
 - Menge aller deutschen Bundesländer: $M = \{ x\ |\ x \text{ ist deutsches Bundesland} \}$
 - Menge aller reellen Zahlen von 0 bis 2: $M = \{ x\ |\ x \in \mathbb{R} \wedge 0 \le x \le 2 \}$
 - Menge der ganzzahligen Lösungen einer Gleichung: $M = \{ x\ |\ x \in \mathbb{Z} \wedge x^2 + 2 = 4x - 1 \}$
-- Menge aller ganzen Quadratzahlen: $M = \{ x\ |\ \exists y \in \mathbb{Z}:\ x = y^2 \}$
+- Menge aller ganzen Quadratzahlen: $M = \{ x\ |\ \exists y \in \mathbb{Z} \colon x = y^2 \}$
 
 :::note Extensionalitätsaxiom (ZF) / Gleichheit von Mengen
 
 Zwei Mengen sind gleich, wenn sie die gleichen Elemente besitzen:
 $$
     \begin{equation*}
-        A = B\ :=\ \forall x:\ x \in A \leftrightarrow x \in B 
+        A = B\ \coloneqq\ \forall x \colon x \in A \leftrightarrow x \in B
     \end{equation*}
 $$
 
@@ -122,7 +122,7 @@ oder *Schnittmenge*.
 :::note Durchschnitt
 
 $$
-    A \cap B := \{ x\ |\ x \in A \wedge x \in B \}
+    A \cap B \coloneqq \{ x\ |\ x \in A \wedge x \in B \}
 $$
 
 gesprochen: "A geschnitten B"
@@ -155,7 +155,7 @@ Elemente, die in beiden vorkommen, werden dabei nur einmal gezählt.
 :::note Vereinigung
 
 $$
-    A \cup B := \{ x\ |\ x \in A \vee x \in B \}
+    A \cup B \coloneqq \{ x\ |\ x \in A \vee x \in B \}
 $$
 
 gesprochen: "A vereinigt B"
@@ -182,7 +182,7 @@ Das *Komplement* einer Menge besteht gerade aus den Elementen, die nicht in der 
 :::note Komplement
 
 $$
-    \overline{A} = A^\complement := \{ x\ |\ \neg (x \in A) \} = \{ x\ |\ x \notin A \}
+    \overline{A} = A^\complement \coloneqq \{ x\ |\ \neg (x \in A) \} = \{ x\ |\ x \notin A \}
 $$
 
 gesprochen: "Komplement von A"
@@ -209,7 +209,7 @@ aber ohne die Elemente, die auch in der anderen liegen, dann ist das die *Differ
 :::note Differenz
 
 $$
-    A \setminus B := \{ x\ |\ x \in A \wedge x \notin B \}
+    A \setminus B \coloneqq \{ x\ |\ x \in A \wedge x \notin B \}
 
 $$
 
@@ -322,8 +322,8 @@ Dieses Wort "Teil" lässt sich wie folgt definieren:
 :::note Inklusion
 
 Seien $M, A$ Mengen.
-- $A \subseteq M := \forall x:\ x \in A \rightarrow x \in M$
-- $A \subset M := A \subseteq M \wedge A \ne M$
+- $A \subseteq M \coloneqq \forall x \colon x \in A \rightarrow x \in M$
+- $A \subset M \coloneqq A \subseteq M \wedge A \ne M$
 
 Für $A \subseteq M$ spricht man "$A$ ist *Teilmenge* von $M$" und
 für $A \subset M$ spricht man "$A$ ist *echte Teilmenge* von $M$"

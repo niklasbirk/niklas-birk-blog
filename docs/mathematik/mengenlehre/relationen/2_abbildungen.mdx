@@ -15,7 +15,7 @@ Bevor wir uns den Abbildungen widmen, definieren wir die Eindeutigkeit:
 
 Eine Relation $R \subseteq A \times B$ ist *eindeutig*, wenn
 $$
-    \forall x \in A\ \forall y, y' \in B:\ (x,y) \in R \wedge (x,y') \in R \rightarrow y = y'
+    \forall x \in A\ \forall y, y' \in B \colon (x,y) \in R \wedge (x,y') \in R \rightarrow y = y'
 $$
 
 :::
@@ -32,18 +32,18 @@ Bei der Eindeutigkeit ist es egal, wie viele Pfeile rechts auf ein Element zugeh
 
 :::note Abbildung / Funktion
 
-$f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $:=$
+$f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $\coloneqq$
 - $f$ ist Relation, also $f \subseteq A \times B$
 - $D(f) = A$, also $f$ ist Relation *__von__ $A$ in $B$*
 - $f$ ist eindeutig
 
 Mathematisch-logisch aufgeschrieben:
 $$
-    \forall x \in A\ \exists ! y \in B:\ (x,y) \in A \times B
+    \forall x \in A\ \exists ! y \in B \colon (x,y) \in A \times B
 $$
 
 :::
-Man schreibt dafür: $f:\ A \rightarrow B$.  
+Man schreibt dafür: $f \colon A \rightarrow B$.
 Statt $R(x) = \{y\}$ wie bei normalen Relationen, schreibt man verkürzt $f(x) = y$, da das $y$ ja nun eindeutig ist.
 
 Eine Funktion ordnet also jedem Element aus $A$ genau ein $y$ aus $B$ zu.
@@ -56,12 +56,12 @@ Eine Abbildung oder eine Funktion einer Menge $A$ in eine Menge $B$ ordnet jedem
 
 :::
 Bei dieser Definition wird komplett auf die mengentheoretische Begriffe wie *geordnetes Paar* oder auch *Relation* verzichtet.
-Erst aufbauend darauf wird dann mengentheoretisch der *Graph der Funktion* definiert als $G_f := \{(x,f(x))\ |\ x \in A \wedge f(x) \in B\} \subseteq A \times B$.
+Erst aufbauend darauf wird dann mengentheoretisch der *Graph der Funktion* definiert als $G_f \coloneqq \{(x,f(x))\ |\ x \in A \wedge f(x) \in B\} \subseteq A \times B$.
 Aus mengentheoretischer Sicht stimmen in diesen Fällen die Begriffe "Funktion" und "Graph der Funktion" überein.
 
 #### Beispiele
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$ und $B = \{a, b, c, d\}$.
-Eine Abbildung $f:\ A \rightarrow B$ können dann sein:
+Eine Abbildung $f \colon A \rightarrow B$ können dann sein:
 - $f = \{(1,b)\}$
 - $f = \{(1,a), (2,b), (3,b), (4,d)\}$
 - $f = \{(1,b), (2,c), (3,d), (4,a), (5,b)\}$
@@ -73,7 +73,7 @@ dann schreibt man Abbildungen so:
 :::note Schreibweisen
 
 $$
-    f:\ A \rightarrow B,\ x \mapsto f(x)
+    f \colon A \rightarrow B,\ x \mapsto f(x)
     \qquad\qquad\text{oder}\qquad\qquad
     f: \begin{cases}
         A \rightarrow B\\
@@ -85,7 +85,7 @@ wobei anstelle $f(x)$ dann z.B. eine *Funktionsgleichung* tritt.
 :::
 
 #### Beispiele
-- $f:\ \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ für eine Parabel
+- $f \colon \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ für eine Parabel
 - $f: \begin{cases}
      \mathbb{N} \rightarrow \mathbb{R}\\
      x \mapsto \sqrt{x}
@@ -95,7 +95,7 @@ Es werden noch mehr unterschiedliche Darstellungsformen für Funktionen auftauch
 Bis dahin sollten einem die Begriffe allerdings so vertraut vorkommen, dass eine genaue Definition oder Einführung nicht notwendig ist.
 
 ## Grundlegende Eigenschaften von Funktionen
-Die *Verkettung*, oder auch *Komposition*, $f \circ g: A \rightarrow C$ von Funktionen $f:\ A \rightarrow B$ und $g:\ B \rightarrow C$ ist wieder eine Funktion.
+Die *Verkettung*, oder auch *Komposition*, $f \circ g: A \rightarrow C$ von Funktionen $f \colon A \rightarrow B$ und $g \colon B \rightarrow C$ ist wieder eine Funktion.
 Für die Komposition gilt $f \circ g = g(f(x))$.
 In anderer Literatur kann es sein, dass die Komposition anders definiert ist und dann $f \circ g = f(g(x))$ gilt.
 
@@ -106,9 +106,9 @@ Zwei Funktionen $f$ und $g$ sind gleich $f=g$, wenn für alle $x$ gilt $f(x) = g
 :::note Injektivität, Surjektivität, Bijektivität
 
 Sei $f: A \rightarrow B$ eine Funktion.
-- $f$ heißt *injektiv* (*eineindeutig*) $:=\ \forall x,x' \in A:\ f(x) = f(x') \rightarrow x = x'$
-- $f$ heißt *surjektiv* (*Abbildung auf $B$*) $:=\ \forall y \in B\ \exists x \in A:\ f(x) = y$
-- $f$ heißt *bijektiv* (*eineindeutige Abbildung auf $B$*) $:=\ f$ ist injektiv und surjektiv
+- $f$ heißt *injektiv* (*eineindeutig*) $\coloneqq\ \forall x,x' \in A \colon f(x) = f(x') \rightarrow x = x'$
+- $f$ heißt *surjektiv* (*Abbildung auf $B$*) $\coloneqq\ \forall y \in B\ \exists x \in A \colon f(x) = y$
+- $f$ heißt *bijektiv* (*eineindeutige Abbildung auf $B$*) $\coloneqq\ f$ ist injektiv und surjektiv
 
 :::
 *Injektivität* bedeutet, dass jedes $y$ aus der Bildmenge *höchstens einmal* abgebildet wird.
@@ -133,21 +133,21 @@ Dass dabei $A$ und $B$ gleich viele Elemente haben müssen ist kein Zufall.
 Welche Rolle bijektive Abbildungen bei der *Kardinalität* ("Größe") von Mengen haben, wird im Kapitel [Endlichkeit und Kardinalzahlen](../endlichkeit) erklärt.
 
 #### Beispiele
-Gegeben sei $f:\ \mathbb{N} \rightarrow \mathbb{N},\ n \mapsto f(n)$.
+Gegeben sei $f \colon \mathbb{N} \rightarrow \mathbb{N},\ n \mapsto f(n)$.
 Betrachten verschiedene Funktionsgleichungen für $f(n)$:
-- $f(n)\ :=\ n+1 \quad$ (*Nachfolgerfunktion*) ist injektiv, aber nicht surjektiv, da $0 \notin W(f)$
-- $f(n)\ := \begin{cases} \lfloor \frac{n}{2} \rfloor & n \text{ gerade}\\ 0 & n \text{ ungerade} \end{cases} \quad$ ist surjektiv, 
+- $f(n)\ \coloneqq\ n+1 \quad$ (*Nachfolgerfunktion*) ist injektiv, aber nicht surjektiv, da $0 \notin W(f)$
+- $f(n)\ \coloneqq \begin{cases} \left\lfloor \frac{n}{2} \right\rfloor & n \text{ gerade}\\ 0 & n \text{ ungerade} \end{cases} \quad$ ist surjektiv,
   aber nicht injektiv, da z.B. $f(1) = f(3) = 0$
-- $f(n)\ :=\ n \quad$ (*identische Abbildung*) ist injektiv, surjektiv und damit auch bijektiv
+- $f(n)\ \coloneqq\ n \quad$ (*identische Abbildung*) ist injektiv, surjektiv und damit auch bijektiv
 
-Gegeben sei $f:\ \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2$, also eine Parabelfunktion.
+Gegeben sei $f \colon \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2$, also eine Parabelfunktion.
 $f$ ist weder injektiv, noch surjektiv.
 Wenn man allerdings die Abbildungsmengen einschränkt, kann man eine injektive, surjektive oder bijektive Abbildung erhalten.
 Im Folgenden bezeichnen wir $\mathbb{R}_{\ge 0}$ als die Menge der nicht-negativen reellen Zahlen, also reelle Zahlen $\ge 0$.
 Am einfachsten ist es, sich die folgenden Fälle zu skizzieren:
-- $f:\ \mathbb{R}_{\ge 0} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ ist injektiv, aber nicht surjektiv
-- $f:\ \mathbb{R} \rightarrow \mathbb{R}_{\ge 0},\ x \mapsto x^2 \quad$ ist surjektiv, aber nicht injektiv
-- $f:\ \mathbb{R}_{\ge 0} \rightarrow \mathbb{R}_{\ge 0},\ x \mapsto x^2 \quad$ ist injektiv und surjektiv und damit auch bijektiv
+- $f \colon \mathbb{R}_{\ge 0} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ ist injektiv, aber nicht surjektiv
+- $f \colon \mathbb{R} \rightarrow \mathbb{R}_{\ge 0},\ x \mapsto x^2 \quad$ ist surjektiv, aber nicht injektiv
+- $f \colon \mathbb{R}_{\ge 0} \rightarrow \mathbb{R}_{\ge 0},\ x \mapsto x^2 \quad$ ist injektiv und surjektiv und damit auch bijektiv
 
 Zu bijektiven Funktion sagt man auch, sie bilden "*umkehrbar eindeutig*" ab.
 Eingangs wurde erwähnt:
@@ -160,12 +160,12 @@ Bei einer bijektiven Abbildung, die durch eine Funktionsgleichung $y = f(x)$ geg
 dass man die Funktionsgleichung nach $x$ umstellt.
 Man hat dann einen Ausdruck der Form $x = g(y) = f^{-1}(y)$.
 
-Gegeben sei die Abbildung $f:\ \mathbb{R} \rightarrow \mathbb{R}^+$ mit der Funktionsgleichung $f(x) = e^x$.
+Gegeben sei die Abbildung $f \colon \mathbb{R} \rightarrow \mathbb{R}^+$ mit der Funktionsgleichung $f(x) = e^x$.
 Die Exponentialfunktion ist surjektiv, wenn man diese auf die positiven reellen Zahlen abbildet, also die nicht-negativen reellen Zahlen ohne die $0$:
-$\mathbb{R}^+ := \mathbb{R}_{>0} = \mathbb{R}_{\ge 0} \setminus \{0\}$.
+$\mathbb{R}^+ \coloneqq \mathbb{R}_{>0} = \mathbb{R}_{\ge 0} \setminus \{0\}$.
 Der ganze Beweis der Bijektivität sei an dieser allerdings weggelassen.
 
-Die Umkehrfunktion $f^{-1}:\ \mathbb{R}^+ \rightarrow \mathbb{R}$ kann man nun durch Umstellen nach $y$ berechnen:
+Die Umkehrfunktion $f^{-1} \colon \mathbb{R}^+ \rightarrow \mathbb{R}$ kann man nun durch Umstellen nach $y$ berechnen:
 $$
 \begin{alignat*}{2}
     && y &= f(x)\\
@@ -194,26 +194,26 @@ Formal lässt sich das so auffassen:
 
 :::note Erweiterung
 
-Gegeben seien eine Abbildung $f:\ A \rightarrow B$ und die Teilmengen $X \subseteq A$ und $Y \subseteq B$.
+Gegeben seien eine Abbildung $f \colon A \rightarrow B$ und die Teilmengen $X \subseteq A$ und $Y \subseteq B$.
 
-$\widehat{f}(X)\ :=\ \{ y\ |\ y \in B \wedge \exists x \in X:\ f(x) = y \}$
+$\widehat{f}(X)\ \coloneqq\ \{ y\ |\ y \in B \wedge \exists x \in X \colon f(x) = y \}$
 heißt *Erweiterung* von $f$ auf $\mathcal{P}(A)$.
 
-$\widehat{f^{-1}}(Y)\ :=\ \{ x\ |\ x \in A \wedge f(x) \in Y \}$
+$\widehat{f^{-1}}(Y)\ \coloneqq\ \{ x\ |\ x \in A \wedge f(x) \in Y \}$
 heißt *Erweiterung* von $\underbrace{f^{-1}}_{\substack{\text{Inverse Relation}\\\text{i.A. keine Abbildung}}}$ auf $\mathcal{P}(B)$.
 
 :::
 
-$\widehat{f}:\ \mathcal{P}(A) \rightarrow \mathcal{P}(B)$ ist wie $f$ wieder eine Abbildung.
+$\widehat{f} \colon \mathcal{P}(A) \rightarrow \mathcal{P}(B)$ ist wie $f$ wieder eine Abbildung.
 Während $f^{-1}$ hier allgemein die inverse Relation ist und damit keine (Umkehr-)Abbildung,
-ist $\widehat{f^{-1}}:\ \mathcal{P}(B) \rightarrow \mathcal{P}(A)$ allerdings immer eine Abbildung.
+ist $\widehat{f^{-1}} \colon \mathcal{P}(B) \rightarrow \mathcal{P}(A)$ allerdings immer eine Abbildung.
 
 Häufig schreibt man statt $\widehat{f}$ auch wieder nur $f$ bzw. für $\widehat{f^{-1}}$ auch wieder $f^{-1}$.
 Eine Verwechslung ist ausgeschlossen, da die Abbildung $f$ ein Element entgegennimmt, 
 während die Erweiterung von $f$ eine Menge entgegennimmt.
 
 #### Beispiele
-Gegeben sei $f:\ \{1, 2, 3\} \rightarrow \{a, b, c, d\}$ mit $f(1) = a,\ f(2) = c,\ f(3) = a$.
+Gegeben sei $f \colon \{1, 2, 3\} \rightarrow \{a, b, c, d\}$ mit $f(1) = a,\ f(2) = c,\ f(3) = a$.
 Dann sind bspw.:
 - $\widehat{f}(\emptyset) = f(\emptyset) = \emptyset$
 - $\widehat{f}(\{1, 2\}) = f(\{1, 2\}) = \{ a, c \}$
@@ -234,7 +234,7 @@ Diese spielen in der Algebra eine wichtige Rolle.
 
 :::note Operation oder Verknüpfung
 
-$f$ heißt *innere $n$-stellige algebraische Operation* $:=\ f:\ A^n \rightarrow A$.
+$f$ heißt *innere $n$-stellige algebraische Operation* $\coloneqq\ f \colon A^n \rightarrow A$.
 
 :::
 
@@ -249,17 +249,17 @@ Bereits im Kapitel [Verband](../mengen#verband) wurden zweistellige Operationen 
 
 #### Beispiele
 Aus dem Kapitel [Verband](../mengen#verband) wissen wir, dass $\cap$ und $\cup$ zweistellige Operationen für eine Menge $A$ sind:
-- $\cap:\ \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$
-- $\cup:\ \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$
+- $\cap \colon \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$
+- $\cup \colon \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$
 
 Weitere Beispiele:
-- $+:\ \mathbb{N}^2 \rightarrow \mathbb{N}$ als Addition in den natürlichen Zahlen: $+(a, b) = a+b \quad = \quad c$
+- $+ \colon \mathbb{N}^2 \rightarrow \mathbb{N}$ als Addition in den natürlichen Zahlen: $+(a, b) = a+b \quad = \quad c$
   - $+(2,3) = 2 + 3 \quad = \quad 5$
   - $100 + 1 = 101$
-- $\hat{\ }:\ \mathbb{R}^2 \rightarrow \mathbb{R}$ als Potenz: $\hat{\ }(a,b) = a^b \quad = \quad c$
+- $\hat{\ } \colon \mathbb{R}^2 \rightarrow \mathbb{R}$ als Potenz: $\hat{\ }(a,b) = a^b \quad = \quad c$
   - $\hat{\ }(2,2) = 2^2 \quad = \quad 4$
   - $3^4 = 81$
-- $\circ:\ \text{Abb}(A,A)^2 \rightarrow \text{Abb}(A,A)$ als Komposition: $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad h$  
+- $\circ \colon \text{Abb}(A,A)^2 \rightarrow \text{Abb}(A,A)$ als Komposition: $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad h$.
   $\text{Abb}(A,A)$ ist dabei die Menge aller Abbildungen von $A$ in $A$.
   - Mit $f(x) = x^2,\ g(x) = x+2$ ist $\circ(f,g) = f \circ g = g(f(x)) \quad = \quad g(x^2) = x^2+2$
   - Mit $f(x) = \ln(x) + \frac{\pi}{2},\ g(x) = \sin x$ ist 
