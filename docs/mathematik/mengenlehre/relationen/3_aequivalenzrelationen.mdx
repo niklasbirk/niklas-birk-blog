@@ -4,4 +4,44 @@ tags: [mathematik, mengenlehre, relation, äquivalenzrelation, äquivalenz]
 sidebar_position: 4
 ---
 
-WIP
+Eine weitere wichtige Art der Relationen sind die *Äquivalenzrelationen*.
+Die Äquivalenzrelationen und die mit diesen eng zusammenhängenden *Äquivalenzklassen* sind für viele weiterführende Begriffe der Mathematik essentiell.
+
+# Äquivalenzrelationen
+Bevor wir die Äquivalenzrelationen formal einführen, widmen wir uns erst nochmal ein paar wichtige Einordnungen Relationen betreffend.
+
+:::note Reflexivität / Symmetrie / Transitivität
+
+Sei $M$ eine Menge und $\varrho \subseteq M \times M$ eine Relation.
+- $\varrho$ heißt *reflexiv* $:\Leftrightarrow \forall x \in M \colon (x,x) \in \varrho$
+- $\varrho$ heißt *symmetrisch* $:\Leftrightarrow \forall x,y \in M \colon (x,y) \in \varrho \rightarrow (y,x) \in \varrho$
+- $\varrho$ heißt *transitiv* $:\Leftrightarrow \forall x,y,z \in M \colon (x,y) \in \varrho \wedge (y,z) \in \varrho \rightarrow (x,z) \in \varrho$
+
+:::
+
+#### Beispiele
+Gegeben sei die Menge $M = \{a,b,c\}$.
+- $\varrho = \{(a,a), (b,b), (c,c), (a,b), (a,c)\}$ ist reflexiv,
+    da die Paare $(a,a)$, $(b,b)$ und $(c,c)$ in $\varrho$ sind.\
+    $\varrho = \{(a,a), (c,c), (a,b)\}$ dagegen ist nicht reflexiv, da $(b,b)$ fehlt.
+
+- $\varrho = \{(a,a), (a,b), (b,a), (b,c), (c,b)\}$ ist symmetrisch,
+    da zu jedem Paar $(x,y)$ auch das Inverse Paar $(y,x)$ vorkommt.\
+    $\varrho = \{(a,a), (a,c), (b,a)\}$ dagegen ist nicht symmetrisch, da sowohl $(c,a)$ und $(a,b)$ fehlt.
+
+- $\varrho = \{(a,b), (b,c), (a,c)\}$ ist transitiv,
+    da $(a,c)$ vorhanden ist, nachdem schon $(a,b)$ und $(b,c)$ in $\varrho$ sind.\
+    $\varrho = \{(a,b), (b,a), (b,c)\}$ dagegen ist nicht transitiv, da sowohl $(a,a)$ fehlt.
+
+Eine Relation, die nun all diese drei Eigenschaften zugleich erfüllt nennt sich *Äquivalenzrelation*.
+
+:::note Äquivalenzrelation
+
+Sei $M$ eine Menge und $\varrho \subseteq M \times M$ eine Relation.
+$\varrho$ heißt *Äquivalenzrelation*, falls $\varrho$ reflexiv, symmetrisch und transitiv ist.
+
+:::
+
+#### Beispiele
+Die wohl bekannteste Äquivalenzrelation auf jeder Menge $M$ ist die Gleichheit $=$ mit ihren üblichen Eigenschaften.
+Äquivalenz in der Logik ist ebenfalls eine Äquivalenzrelation.
