@@ -14,7 +14,7 @@ möchte Mengen miteinander in eine gewisse Verbindung bringen, ohne sie einfach 
 
 Ein *geordnetes Paar* (*2-Tupel*) mit den Elementen $a$ und $b$ ist wie folgt als Menge definiert:
 $$
-    (a, b)\ \coloneqq\ \{ \overbrace{\{a, b\}}^{\text{Elemente des Tupels}}, \underbrace{\{a\}}_{\text{Erstes Element}} \}
+    (a, b) \coloneqq \{ \overbrace{\{a, b\}}^{\text{Elemente des Tupels}}, \underbrace{\{a\}}_{\text{Erstes Element}} \}
 $$ 
 
 :::
@@ -58,7 +58,7 @@ Die Menge aller Tupel von Mengen nennt man *kartesisches Produkt*:
 
 Seien $A$ und $B$ Mengen, dann ist das *kartesische Produkt* der Mengen $A$ und $B$ definiert als
 $$
-    A \times B\ \coloneqq\ \{ (a,b)\ |\ a \in A \wedge b \in B \}
+    A \times B \coloneqq \{ (a,b)\ |\ a \in A \wedge b \in B \}
 $$
 
 Mit 
@@ -117,12 +117,12 @@ Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweit
 
 - *Definitionsbereich* von $R$: 
    $$
-      D(R)\ \coloneqq\ \{ x\ |\ x \in A \wedge \exists y \in B \colon (x,y) \in R \}
+      D(R) \coloneqq \{ x\ |\ x \in A \wedge \exists y \in B \colon (x,y) \in R \}
    $$
    Der Definitionsbereich von $R$ umfasst also alle Elemente $x$ aus $A$, für die es ein $y$ aus $B$ gibt.
 - *Wertebereich* oder *Bild* von $R$:
    $$
-      W(R)\ \coloneqq\ \{ y\ |\ y \in B \wedge \exists x \in A \colon (x,y) \in R \}
+      W(R) \coloneqq \{ y\ |\ y \in B \wedge \exists x \in A \colon (x,y) \in R \}
    $$
    Der Wertebereich oder das Bild von $R$ umfasst also alle Elemente $y$ aus $B$, für die es ein $x$ aus $A$ gibt.
 
@@ -172,7 +172,7 @@ und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupe
 
 Sei $R$ Relation.
 $$
-   R(x)\ \coloneqq\ \{ y\ |\ y \in B \wedge (x,y) \in R \}
+   R(x) \coloneqq \{ y\ |\ y \in B \wedge (x,y) \in R \}
 $$
 
 :::
@@ -201,7 +201,7 @@ Relationsbezeichnung in die Mitte:
 
 Sei $R$ Relation.
 $$
-    x R y\ \coloneqq\ (x,y) \in R
+    x R y \coloneqq (x,y) \in R
 $$
 
 :::
@@ -227,7 +227,7 @@ Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleic
 Seien $R \subseteq A \times B$ und $K \subseteq B \times C$ Relationen.
 Dann ist die Verkettung von $R$ mit $K$ definiert als:
 $$
-   R \circ K\ \coloneqq\ \{ (x,z)\ |\ \exists y \in B \colon (x,y) \in R \wedge (y,z) \in K \}
+   R \circ K \coloneqq \{ (x,z)\ |\ \exists y \in B \colon (x,y) \in R \wedge (y,z) \in K \}
 $$
 Also ist $R \circ K \subseteq A \times C$.
 
@@ -260,7 +260,7 @@ Das heißt, wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das
 
 Gegeben sei $R \subseteq A \times B$
 $$
-    R^{-1}\ \coloneqq\ \{(y,x)\ |\ (x,y) \in R \} \subset B \times A
+    R^{-1} \coloneqq \{(y,x)\ |\ (x,y) \in R \} \subset B \times A
 $$
 ist die *inverse Relation* zu $R$.
 

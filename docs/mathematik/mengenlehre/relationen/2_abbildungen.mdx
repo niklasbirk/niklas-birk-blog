@@ -32,7 +32,7 @@ Bei der Eindeutigkeit ist es egal, wie viele Pfeile rechts auf ein Element zugeh
 
 :::note Abbildung / Funktion
 
-$f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $\coloneqq$
+$f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $:\Leftrightarrow$
 - $f$ ist Relation, also $f \subseteq A \times B$
 - $D(f) = A$, also $f$ ist Relation *__von__ $A$ in $B$*
 - $f$ ist eindeutig
@@ -75,7 +75,7 @@ dann schreibt man Abbildungen so:
 $$
     f \colon A \rightarrow B,\ x \mapsto f(x)
     \qquad\qquad\text{oder}\qquad\qquad
-    f: \begin{cases}
+    f \colon \begin{cases}
         A \rightarrow B\\
         x \mapsto f(x)
     \end{cases}
@@ -86,7 +86,7 @@ wobei anstelle $f(x)$ dann z.B. eine *Funktionsgleichung* tritt.
 
 #### Beispiele
 - $f \colon \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ für eine Parabel
-- $f: \begin{cases}
+- $f \colon \begin{cases}
      \mathbb{N} \rightarrow \mathbb{R}\\
      x \mapsto \sqrt{x}
   \end{cases} \quad$ für Wurzeln von natürlichen Zahlen
@@ -95,7 +95,7 @@ Es werden noch mehr unterschiedliche Darstellungsformen für Funktionen auftauch
 Bis dahin sollten einem die Begriffe allerdings so vertraut vorkommen, dass eine genaue Definition oder Einführung nicht notwendig ist.
 
 ## Grundlegende Eigenschaften von Funktionen
-Die *Verkettung*, oder auch *Komposition*, $f \circ g: A \rightarrow C$ von Funktionen $f \colon A \rightarrow B$ und $g \colon B \rightarrow C$ ist wieder eine Funktion.
+Die *Verkettung*, oder auch *Komposition*, $f \circ g \colon A \rightarrow C$ von Funktionen $f \colon A \rightarrow B$ und $g \colon B \rightarrow C$ ist wieder eine Funktion.
 Für die Komposition gilt $f \circ g = g(f(x))$.
 In anderer Literatur kann es sein, dass die Komposition anders definiert ist und dann $f \circ g = f(g(x))$ gilt.
 
@@ -135,10 +135,10 @@ Welche Rolle bijektive Abbildungen bei der *Kardinalität* ("Größe") von Menge
 #### Beispiele
 Gegeben sei $f \colon \mathbb{N} \rightarrow \mathbb{N},\ n \mapsto f(n)$.
 Betrachten verschiedene Funktionsgleichungen für $f(n)$:
-- $f(n)\ \coloneqq\ n+1 \quad$ (*Nachfolgerfunktion*) ist injektiv, aber nicht surjektiv, da $0 \notin W(f)$
+- $f(n) \coloneqq n+1 \quad$ (*Nachfolgerfunktion*) ist injektiv, aber nicht surjektiv, da $0 \notin W(f)$
 - $f(n)\ \coloneqq \begin{cases} \left\lfloor \frac{n}{2} \right\rfloor & n \text{ gerade}\\ 0 & n \text{ ungerade} \end{cases} \quad$ ist surjektiv,
   aber nicht injektiv, da z.B. $f(1) = f(3) = 0$
-- $f(n)\ \coloneqq\ n \quad$ (*identische Abbildung*) ist injektiv, surjektiv und damit auch bijektiv
+- $f(n) \coloneqq n \quad$ (*identische Abbildung*) ist injektiv, surjektiv und damit auch bijektiv
 
 Gegeben sei $f \colon \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2$, also eine Parabelfunktion.
 $f$ ist weder injektiv, noch surjektiv.
@@ -196,10 +196,10 @@ Formal lässt sich das so auffassen:
 
 Gegeben seien eine Abbildung $f \colon A \rightarrow B$ und die Teilmengen $X \subseteq A$ und $Y \subseteq B$.
 
-$\widehat{f}(X)\ \coloneqq\ \{ y\ |\ y \in B \wedge \exists x \in X \colon f(x) = y \}$
+$\widehat{f}(X) \coloneqq \{ y\ |\ y \in B \wedge \exists x \in X \colon f(x) = y \}$
 heißt *Erweiterung* von $f$ auf $\mathcal{P}(A)$.
 
-$\widehat{f^{-1}}(Y)\ \coloneqq\ \{ x\ |\ x \in A \wedge f(x) \in Y \}$
+$\widehat{f^{-1}}(Y) \coloneqq \{ x\ |\ x \in A \wedge f(x) \in Y \}$
 heißt *Erweiterung* von $\underbrace{f^{-1}}_{\substack{\text{Inverse Relation}\\\text{i.A. keine Abbildung}}}$ auf $\mathcal{P}(B)$.
 
 :::
