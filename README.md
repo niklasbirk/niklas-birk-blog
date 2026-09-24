@@ -1,7 +1,3 @@
-# Blog von Niklas Birk
+# Mathematik, Informatik und Programmierung
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-## Über den Blog
-
-Ich möchte gelegentlich über coole der Themen der Mathematik, der Informatik oder das programmieren schreiben.
