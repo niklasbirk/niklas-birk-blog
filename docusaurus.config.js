@@ -5,7 +5,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const darkCodeTheme = require('prism-react-renderer').themes.catppuccin;
 
 /** @type {import('@docusaurus/types').Config} */
 export default {
@@ -14,8 +14,13 @@ export default {
     url: 'https://www.niklas-birk.de',
     baseUrl: '/',
     onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
     favicon: 'img/niklas-birk-icon.ico',
+
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'warn',
+        }
+    },
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -116,10 +121,10 @@ export default {
                     {
                         title: 'Socials',
                         items: [
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/theoremofnik',
-                            },
+                            // {
+                            //     label: 'Twitter',
+                            //     href: 'https://twitter.com/theoremofnik',
+                            // },
                             {
                                 label: 'Mastodon',
                                 href: 'https://mathstodon.xyz/web/@SirNik',
@@ -156,7 +161,7 @@ export default {
                 copyright: `Copyright © ${new Date().getFullYear()} Niklas Birk. Built with Docusaurus.`,
             },
             prism: {
-                theme: lightCodeTheme,
+                theme: darkCodeTheme,
                 darkTheme: darkCodeTheme,
             },
         }),
@@ -171,6 +176,7 @@ export default {
         },
     ],
     future: {
-        experimental_faster: true,
+            v4: true,
+        faster: true,
     }
 };

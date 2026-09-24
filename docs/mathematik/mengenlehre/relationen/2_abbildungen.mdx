@@ -8,10 +8,10 @@ Eine der wichtigsten Relationen überhaupt stellen die *Abbildungen* da.
 Sie tauchen überall in der Mathematik auf und in der Realität lassen sich viele Probleme durch diese 
 speziellen Relationen darstellen.
 
-## Funktionen
+## Funktionen {/* #funktionen */}
 Bevor wir uns den Abbildungen widmen, definieren wir die Eindeutigkeit:
 
-:::note Eindeutigkeit
+:::note[Eindeutigkeit]
 
 Eine Relation $R \subseteq A \times B$ ist *eindeutig*, wenn
 $$
@@ -30,7 +30,7 @@ Bei der Eindeutigkeit ist es egal, wie viele Pfeile rechts auf ein Element zugeh
 
 ![Eindeutigkeit bei einer Relation dargestellt](/img/mathematik/mengenlehre/relationen/eindeutige_rel.png)
 
-:::note Abbildung / Funktion
+:::note[Abbildung / Funktion]
 
 $f$ ist *Abbildung* oder *Funktion* von $A$ in $B$ $:\Leftrightarrow$
 - $f$ ist Relation, also $f \subseteq A \times B$
@@ -50,7 +50,7 @@ Eine Funktion ordnet also jedem Element aus $A$ genau ein $y$ aus $B$ zu.
 
 In der Analysis und auch in anderen mathematischen Gebieten findet man häufig eine alternative textliche Einführung:
 
-:::note Alternative Definition
+:::note[Alternative Definition]
 
 Eine Abbildung oder eine Funktion einer Menge $A$ in eine Menge $B$ ordnet jedem Element $x \in A$ genau ein Element $y \in B$ zu.
 
@@ -59,7 +59,7 @@ Bei dieser Definition wird komplett auf die mengentheoretische Begriffe wie *geo
 Erst aufbauend darauf wird dann mengentheoretisch der *Graph der Funktion* definiert als $G_f \coloneqq \{(x,f(x))\ |\ x \in A \wedge f(x) \in B\} \subseteq A \times B$.
 Aus mengentheoretischer Sicht stimmen in diesen Fällen die Begriffe "Funktion" und "Graph der Funktion" überein.
 
-#### Beispiele
+#### Beispiele {/* #beispiele */}
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$ und $B = \{a, b, c, d\}$.
 Eine Abbildung $f \colon A \rightarrow B$ können dann sein:
 - $f = \{(1,b)\}$
@@ -70,7 +70,7 @@ Eine Abbildung $f \colon A \rightarrow B$ können dann sein:
 Wenn man eine rechnerische Vorschrift (*Abbildungsvorschrift*) angeben möchte, wie ein $y$ zu einem $x$ berechnet werden soll, 
 dann schreibt man Abbildungen so:
 
-:::note Schreibweisen
+:::note[Schreibweisen]
 
 $$
     f \colon A \rightarrow B,\ x \mapsto f(x)
@@ -84,7 +84,7 @@ wobei anstelle $f(x)$ dann z.B. eine *Funktionsgleichung* tritt.
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-1 */}
 - $f \colon \mathbb{R} \rightarrow \mathbb{R},\ x \mapsto x^2 \quad$ für eine Parabel
 - $f \colon \begin{cases}
      \mathbb{N} \rightarrow \mathbb{R}\\
@@ -94,7 +94,7 @@ wobei anstelle $f(x)$ dann z.B. eine *Funktionsgleichung* tritt.
 Es werden noch mehr unterschiedliche Darstellungsformen für Funktionen auftauchen, je nachdem wie es gerade angebracht ist.
 Bis dahin sollten einem die Begriffe allerdings so vertraut vorkommen, dass eine genaue Definition oder Einführung nicht notwendig ist.
 
-## Grundlegende Eigenschaften von Funktionen
+## Grundlegende Eigenschaften von Funktionen {/* #grundlegende-eigenschaften-von-funktionen */}
 Die *Verkettung*, oder auch *Komposition*, $f \circ g \colon A \rightarrow C$ von Funktionen $f \colon A \rightarrow B$ und $g \colon B \rightarrow C$ ist wieder eine Funktion.
 Für die Komposition gilt $f \circ g = g(f(x))$.
 In anderer Literatur kann es sein, dass die Komposition anders definiert ist und dann $f \circ g = f(g(x))$ gilt.
@@ -103,7 +103,7 @@ Jedoch ist das *Inverse* $f^{-1}$ einer Funktion $f$ im Allgemeinen keine Funkti
 
 Zwei Funktionen $f$ und $g$ sind gleich $f=g$, wenn für alle $x$ gilt $f(x) = g(x)$.
 
-:::note Injektivität, Surjektivität, Bijektivität
+:::note[Injektivität, Surjektivität, Bijektivität]
 
 Sei $f: A \rightarrow B$ eine Funktion.
 - $f$ heißt *injektiv* (*eineindeutig*) $\coloneqq\ \forall x,x' \in A \colon f(x) = f(x') \rightarrow x = x'$
@@ -132,7 +132,7 @@ Es darf also kein Element aus $B$ frei bleiben und es darf nur genau ein Pfeil p
 Dass dabei $A$ und $B$ gleich viele Elemente haben müssen ist kein Zufall.
 Welche Rolle bijektive Abbildungen bei der *Kardinalität* ("Größe") von Mengen haben, wird im Kapitel [Endlichkeit und Kardinalzahlen](../endlichkeit) erklärt.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-2 */}
 Gegeben sei $f \colon \mathbb{N} \rightarrow \mathbb{N},\ n \mapsto f(n)$.
 Betrachten verschiedene Funktionsgleichungen für $f(n)$:
 - $f(n) \coloneqq n+1 \quad$ (*Nachfolgerfunktion*) ist injektiv, aber nicht surjektiv, da $0 \notin W(f)$
@@ -155,7 +155,7 @@ Eingangs wurde erwähnt:
 
 Im Falle einer bijektiven Abbildung $f$ ist $f^{-1}$ allerdings eine Abbildung und man nennt diese dann *Umkehrabbildung* oder *Umkehrfunktion*.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-3 */}
 Bei einer bijektiven Abbildung, die durch eine Funktionsgleichung $y = f(x)$ gegeben ist, kann man die Umkehrabbildung einfach dadurch berechnen,
 dass man die Funktionsgleichung nach $x$ umstellt.
 Man hat dann einen Ausdruck der Form $x = g(y) = f^{-1}(y)$.
@@ -176,7 +176,7 @@ $$
 \end{alignat*}
 $$
 
-## Erweiterung von Abbildungen
+## Erweiterung von Abbildungen {/* #erweiterung-von-abbildungen */}
 Gegeben seien $S$ als die Menge aller Schulkinder und $K$ als die Menge aller Klassen einer Schule.
 Als Abbildung definieren $k: S \rightarrow K$, die jedem Schulkind die eigene Klasse zuordnet.
 Der Direktor hat nun eine Liste von Schulkindern, mit denen er zusammen sprechen möchte.
@@ -192,7 +192,7 @@ Der Direktor hat eine Liste von Klassen und möchte nun wissen, welche Schulkind
 
 Formal lässt sich das so auffassen:
 
-:::note Erweiterung
+:::note[Erweiterung]
 
 Gegeben seien eine Abbildung $f \colon A \rightarrow B$ und die Teilmengen $X \subseteq A$ und $Y \subseteq B$.
 
@@ -212,7 +212,7 @@ Häufig schreibt man statt $\widehat{f}$ auch wieder nur $f$ bzw. für $\widehat
 Eine Verwechslung ist ausgeschlossen, da die Abbildung $f$ ein Element entgegennimmt, 
 während die Erweiterung von $f$ eine Menge entgegennimmt.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-4 */}
 Gegeben sei $f \colon \{1, 2, 3\} \rightarrow \{a, b, c, d\}$ mit $f(1) = a,\ f(2) = c,\ f(3) = a$.
 Dann sind bspw.:
 - $\widehat{f}(\emptyset) = f(\emptyset) = \emptyset$
@@ -227,12 +227,12 @@ und
 - $\widehat{f^{-1}}(\{b, d\}) = f^{-1}(\{b, d\}) = \emptyset$
 - $f^{-1}(\{a, b, c, d\}) = f^{-1}(D(f^{-1})) = \{ 1, 2, 3 \} = W(f^{-1})$
 
-## Operationen
+## Operationen {/* #operationen */}
 Im Kapitel [Kartesisches Produkt](kartesisches_produkt_relationen#kartesisches-produkt) wurde bereits die *kartesische Potenz* eingeführt.
 Mit den kartesischen Potenzen führen wir nun eine weitere wichtige Klasse von Abbildungen ein, die *Operationen* oder *Verknüpfungen*.
 Diese spielen in der Algebra eine wichtige Rolle.
 
-:::note Operation oder Verknüpfung
+:::note[Operation oder Verknüpfung]
 
 $f$ heißt *innere $n$-stellige algebraische Operation* $\coloneqq\ f \colon A^n \rightarrow A$.
 
@@ -247,7 +247,7 @@ $2$-stellige Relationen heißen auch *binäre Relationen*.
 Entsprechend heißen $2$-stellige Operationen auch binäre Operation.
 Bereits im Kapitel [Verband](../mengen#verband) wurden zweistellige Operationen das erste Mal genannt.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-5 */}
 Aus dem Kapitel [Verband](../mengen#verband) wissen wir, dass $\cap$ und $\cup$ zweistellige Operationen für eine Menge $A$ sind:
 - $\cap \colon \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$
 - $\cup \colon \mathcal{P}^2(A) \rightarrow \mathcal{P}(A)$

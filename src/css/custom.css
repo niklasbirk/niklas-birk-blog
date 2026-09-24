@@ -27,12 +27,21 @@
     /*--ifm-color-primary-lighter: #32d8b4;*/
     /*--ifm-color-primary-lightest: #4fddbf;*/
 
-    --ifm-color-primary: #bd93f9; /* dracula purple */
-    --ifm-color-primary-dark: #ffb86c; /* dracula orange */
-    --ifm-color-primary-darker: #ff79c6; /* dracula pink */
-    --ifm-color-primary-darkest: #ff5555; /* dracula red */
-    --ifm-color-primary-light: #50fa7b; /* dracula green */
-    --ifm-color-primary-lighter: #f1fa8c; /* dracula yellow */
-    --ifm-color-primary-lightest: #8be9fd; /* dracula cyan */
+    /*--ifm-color-primary: #bd93f9; !* dracula purple *!*/
+    /*--ifm-color-primary-dark: #ffb86c; !* dracula orange *!*/
+    /*--ifm-color-primary-darker: #ff79c6; !* dracula pink *!*/
+    /*--ifm-color-primary-darkest: #ff5555; !* dracula red *!*/
+    /*--ifm-color-primary-light: #50fa7b; !* dracula green *!*/
+    /*--ifm-color-primary-lighter: #f1fa8c; !* dracula yellow *!*/
+    /*--ifm-color-primary-lightest: #8be9fd; !* dracula cyan *!*/
+
+    --ifm-color-primary: #c6a0f6; /* catppuccin purple */
+    --ifm-color-primary-dark: #f5a97f; /* catppuccin orange */
+    --ifm-color-primary-darker: #f5bde6; /* catppuccin pink */
+    --ifm-color-primary-darkest: #ed8796; /* catppuccin red */
+    --ifm-color-primary-light: #a6da95; /* catppuccin green */
+    --ifm-color-primary-lighter: #eed49f; /* catppuccin yellow */
+    --ifm-color-primary-lightest: #8bd5ca; /* catppuccin cyan */
+
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

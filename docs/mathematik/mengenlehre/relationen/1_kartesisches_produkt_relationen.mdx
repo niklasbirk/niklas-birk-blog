@@ -9,8 +9,8 @@ d.h. sie sind einfach in der Menge ohne Bedeutung und ohne Reihenfolge.
 Manchmal benötigt man jedoch so etwas wie eine Reihenfolge oder 
 möchte Mengen miteinander in eine gewisse Verbindung bringen, ohne sie einfach nur zu Vereinigen.
 
-## Kartesisches Produkt
-:::note Geordnete Paare
+## Kartesisches Produkt {/* #kartesisches-produkt */}
+:::note[Geordnete Paare]
 
 Ein *geordnetes Paar* (*2-Tupel*) mit den Elementen $a$ und $b$ ist wie folgt als Menge definiert:
 $$
@@ -26,7 +26,7 @@ Ein Verband haben wir als ein *Tripel* eingeführt.
 Ein Tripel ist ein 3-Tupel.
 Allgemein lassen sich rekursiv n-Tupel wie folgt definieren:
 
-:::note n-Tupel
+:::note[n-Tupel]
 
 - 1-Tupel: $(x_1) = \{ x_1 \}$
 - 2-Tupel: $(x_1, x_2) = \{ \{x_1, x_2\}, \{x_1\} \}$
@@ -54,7 +54,7 @@ Wir wollen es an dieser Stelle allerdings dabei belassen und nehmen es einfach h
 Man kann nun Tupel zu einer Menge zusammenfassen.
 Die Menge aller Tupel von Mengen nennt man *kartesisches Produkt*:
 
-:::note Kartesisches Produkt
+:::note[Kartesisches Produkt]
 
 Seien $A$ und $B$ Mengen, dann ist das *kartesische Produkt* der Mengen $A$ und $B$ definiert als
 $$
@@ -70,18 +70,18 @@ erhalten wir die *n-fache kartesische Potenz*.
 
 :::
 
-## Relationen
+## Relationen {/* #relationen */}
 Das kartesische Produkt erlaubt es uns jetzt Paare in einer Menge zusammenzufassen.
 Daraus können wir nun eine Teilmenge betrachten.
 
-:::note Relation
+:::note[Relation]
 
 Seien $A$, $B$ Mengen.
 Man nennt $R$ *Relation* oder *Korrespondenz* __aus__ $A$ __in__ $B$ $\coloneqq\ R \subseteq A \times B$
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele */}
 Nehmen wir eine Menge mit drei Elementen $A = \{a_1, a_2, a_3\}$ und bilden alle möglichen Paare.
 Diese Paare fassen wir nun in einer Menge zusammen: 
 $$
@@ -110,10 +110,10 @@ Dennoch sollte man darauf achten, ob man gerade mit einer echten Funktion oder n
 wenn man mit diesen Begriffen jongliert.
 Funktionen werden aber sehr bald schon eingeführt.
 
-### Definitions- und Wertebereich
+### Definitions- und Wertebereich {/* #definitions--und-wertebereich */}
 Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweiten Elemente einer Relation erfasst:
 
-:::note Definitions- und Wertebereich
+:::note[Definitions- und Wertebereich]
 
 - *Definitionsbereich* von $R$: 
    $$
@@ -128,7 +128,7 @@ Es ist sinnvoll Mengen zu definieren, die nur die Elemente ersten oder die zweit
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-1 */}
 Gegeben sei $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
 Dann sind:
 - $D(R) = \{ 1, 2, 3, 5 \}$
@@ -156,7 +156,7 @@ Dann sind:
 
 Je nachdem, ob der Definitions- oder Wertebereich die gesamte Menge $A$ bzw. $B$ umfasst gibt es verschiedene Sprechweisen.
 
-:::note Sprechweisen
+:::note[Sprechweisen]
 
 $R$ ist Relation
 - "*__von__* $A$ *in* $B$" $\coloneqq\ D(R) = A$
@@ -168,7 +168,7 @@ $R$ ist Relation
 Wenn nun eine Relation gegeben ist, dann möchte man vielleicht die Frage stellen "Welche $y$-Werte werden für ein $x$ angenommen?"
 und möchte dies formal ausdrücken bzw. aufschreiben, ohne dabei immer die Tupel angeben zu müssen.
 
-:::note Schreibweise 1
+:::note[Schreibweise 1]
 
 Sei $R$ Relation.
 $$
@@ -177,7 +177,7 @@ $$
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-2 */}
 Gegeben sei $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
 Dann ist:
 $$
@@ -197,7 +197,7 @@ Man erkennt an diesem Beispiel schon einen gewissen Aufbau: "$x$ ist verwandt mi
 Häufig schreibt man in so einem Fall also nicht $(x,y) \in R$ oder $R(x) = \{y, (\dots)\}$, sondern zieht die
 Relationsbezeichnung in die Mitte:
 
-:::note Schreibweise 2
+:::note[Schreibweise 2 (Infix-Schreibweise)]
 
 Sei $R$ Relation.
 $$
@@ -206,7 +206,7 @@ $$
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-3 */}
 Sei $R$ jeweils die Relation in den Stichpunkten.
 Statt $x R y$ schreibt man in konkreten Fällen dann:
 - $x$ ist verwandt mit $y$
@@ -219,10 +219,10 @@ Wir werden uns später noch mit Ordnungsrelationen und Operationen beschäftigen
 Aber an dieser Stelle sind es nur symbolische Beispiele, wieso es sinnvoll ist, manche Relationen in dieser Schreibweise zu präsentieren.
 
 
-### Verkettung und Inverse
+### Verkettung und Inverse {/* #verkettung-und-inverse */}
 Man kann auch zwei Relationen kombinieren, sofern diese *in* und *aus* den gleichen Mengen korrespondieren - in dieser Reihenfolge.
 
-:::note Verkettung / Relationenprodukt
+:::note[Verkettung / Relationenprodukt]
 
 Seien $R \subseteq A \times B$ und $K \subseteq B \times C$ Relationen.
 Dann ist die Verkettung von $R$ mit $K$ definiert als:
@@ -233,7 +233,7 @@ Also ist $R \circ K \subseteq A \times C$.
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-4 */}
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $C = \{\alpha, \beta, \gamma\}$.
 $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$ und 
 $K = \{(a, \alpha), (a, \beta), (a, \gamma), (b, \beta), (c, \alpha)\} \subseteq B \times C$ seien Relationen.
@@ -256,7 +256,7 @@ Relationen kann man auch umkehren.
 Die Rolle der ersten Elemente eines Tupels vertauscht sich dann mit den zweiten Elementen.
 Das heißt, wenn $x$ mit $y$ in Relation steht, also $(x,y) \in R$, dann ist das *Inverse* dazu $(y,x) \in R^{-1}$.
 
-:::note Inverse Relation
+:::note[Inverse Relation]
 
 Gegeben sei $R \subseteq A \times B$
 $$
@@ -268,7 +268,7 @@ ist die *inverse Relation* zu $R$.
 Man beachte, dass sich entsprechend das kartesische Produkt umdreht.
 Also wenn $R \subseteq A \times B$, dann ist $R^{-1} \subseteq B \times A$.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-5 */}
 Gegeben seien $A = \{1, 2, 3, 4, 5\}$, $B = \{a, b, c, d\}$ und $R = \{(1,a), (1,d), (2,b), (3,b), (4,d)\} \subseteq A \times B$.
 Das Inverse $R^{-1}$ von $R$ ist jetzt jedes Paar aus $R$ umgedreht:
 $$
@@ -279,7 +279,7 @@ Veranschaulicht:
 ![Relation R und Inverse von R veranschaulicht durch Pfeile](/img/mathematik/mengenlehre/relationen/inverse_rel.png)
 
 Für die Verkettung und das Inverse gelten nun folgende Eigenschaften:
-:::tip Sätze über Verkettung und Inverse von Relationen
+:::tip[Sätze über Verkettung und Inverse von Relationen]
 
 1. Die Verkettung ist assoziativ: $(R \circ K) \circ F = R \circ (K \circ F )$
 2. $(R^{-1})^{-1} = R$
@@ -295,7 +295,7 @@ Trivial ist eine oft benutzte Bezeichnung in der Mathematik, wenn etwas offensic
 also so leicht, dass man keinen extra beweis dafür angibt - dennoch gibt es Fallen und es sollte nicht leichtfertig benutzt werden.
 In diesem Fall mache man sich klar, dass 2. wirklich gilt und beweise es sogar.
 
-#### Beweis von 3
+#### Beweis von 3 {/* #beweis-von-3 */}
 Der dritte Satz ist eine schöne Beziehung zwischen Verkettung und den inversen Relationen.
 $$
 \begin{alignat*}{2}

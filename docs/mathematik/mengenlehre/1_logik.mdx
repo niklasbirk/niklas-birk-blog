@@ -17,10 +17,10 @@ Syntax und die Semantik hängen in der Logik durchaus eng zusammen, da sie nach 
 In der Mathematik sind die Beweise allerdings informal und eher eine Skizze eines formalen logischen Beweises,
 weshalb die strikte Trennung zwischen Syntax und Semantik nicht immer transparent erscheint.
 
-## Aussagenlogik (PL 0)
+## Aussagenlogik (PL 0) {/* #aussagenlogik-pl-0 */}
 Die *Aussagenlogik* oder auch *Prädikatenlogik 0. Stufe* (*PL0*) beschäftigt sich mit *Aussagen*.
 
-:::note Aussagen
+:::note[Aussagen]
 
 *Aussagen* sind Sachverhalte in sprachlicher Form, die in der objektiven Realität vorliegen oder denkbar sind.
 
@@ -29,7 +29,7 @@ Die *Aussagenlogik* oder auch *Prädikatenlogik 0. Stufe* (*PL0*) beschäftigt s
 Diese Definition wirkt etwas sperrig.
 Eine andere Definition wäre:
 
-:::note Aussagen
+:::note[Aussagen]
 
 Eine *Aussage* ist ein sprachliches Gebilde, dem eindeutig ein
 *Wahrheitswert* (*wahr* oder *falsch*) zugeordnet werden kann.
@@ -40,7 +40,7 @@ Diese Definition verknüpft allerdings schon ein bisschen die Syntax (sprachlich
 Sowohl die Syntax, als auch die Semantik werden nachfolgend gesondert eingeführt.
 Nur wenden wir uns dann nicht mehr dem Begriff Aussage selbst zu, sondern nutzen Variablen.
 
-#### Beispiele
+#### Beispiele {/* #beispiele */}
 Folgendes sind Beispiele für Aussagen:
 - "Berlin ist die Hauptstadt von Deutschland"
 - "Kein Auto ist Minzgrün"
@@ -54,10 +54,10 @@ Die anderen Beiden nutzen eine *formale Sprache*.
 Solche Formeln und andere Schreibweisen mit Symbolen können eine formale Sprache bilden.
 Formale Sprachen werden im Teil [Informatik](/docs/informatik) näher behandelt.
 
-### Syntax
+### Syntax {/* #syntax */}
 Aussagenlogische *Formeln* beinhalten verschiedene Symbole und werden rekursiv definiert:
 
-:::note Aussagenlogische Formeln
+:::note[Aussagenlogische Formeln]
 
 Sei $O = \{ \neg, \wedge, \vee, \rightarrow, \leftrightarrow, (, ) \}$ die Menge der *logischen Operatoren* (*Junktoren*)
 und $\Sigma$ eine Menge von Symbolen, die *Aussagevariablen* genannt werden.
@@ -82,7 +82,7 @@ Es sind auch andere Symbole in Verwendung, je nach Person oder je nach Wissensch
 
 Die Junktoren haben einen Namen und eine Sprechweise:
 
-:::note Name und Sprechweise der Junktoren
+:::note[Name und Sprechweise der Junktoren]
 
 $$
 \begin{align*}
@@ -102,10 +102,10 @@ Bisher war es nur Syntax, d.h. rein syntaktische Gebilde ohne Bedeutung.
 Einfach eine korrekte Aneinanderreihung von Symbolen.
 Auch $w$ und $f$ sind erstmal nur Symbole, die allerdings wenig überraschend mit der den Worten entsprechenden Semantik belegt werden.
 
-### Semantik
+### Semantik {/* #semantik */}
 In der Aussagenlogik gilt das *Zweiwertigkeitsprinzip*:
 
-:::note Zweiwertigkeitsprinzip
+:::note[Zweiwertigkeitsprinzip]
 
 Alle Aussagen sind entweder *wahr* ($w$ oder $1$) oder *falsch* ($f$ oder $0$)
 
@@ -121,7 +121,7 @@ Aber nach welchen Regeln soll das $\wedge$, also das *und*, behandelt werden?
 
 Dafür müssen wir diesen syntaktischen Symbolen nun eine Bedeutung mittels einer Wahrheitstabelle eine Semantik geben.
 
-:::note Semantik der Junktoren
+:::note[Semantik der Junktoren]
 
 $$
 \begin{array}{c|c||c|c|c|c|c|c}
@@ -141,7 +141,7 @@ Die Priorität der Junktoren in absteigender Reihenfolge: $\neg, \wedge, \vee, \
 
 Eine Zeile dieser Wahrheitstabelle nennt man auch *Interpretation* oder *Belegung*.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-1 */}
 Wählen wir folgende Aussagen $A = "3 < 5"$ und $B = "3 + 2 = 1"$.
 $A$ ist eine wahre Aussage, während $B$ eine falsche Aussage ist.
 Wir bilden nun die neue Aussage $A \wedge B$.
@@ -161,7 +161,7 @@ nie was Falsches folgern dürfen, aber aus etwas Falschem stets was Wahres:
 - $2^2 = 4 \rightarrow 1+1=1 \qquad\;$ ist falsch
 - $1+1=1 \rightarrow 2+2=4 \quad$ ist wahr
 
-#### Weitere Anmerkungen
+#### Weitere Anmerkungen {/* #weitere-anmerkungen */}
 Bei $\vee$ (gesprochen *oder*) ist anzumerken, dass es sich um ein *Inklusiv-Oder* handelt, d.h. die Gesamtaussage ist genau dann wahr,
 wenn mindestens eine Teilaussage wahr ist.
 Das Inklusiv-Oder ist wie ein "Milch *oder* Zucker" beim Kaffee zu verstehen - man kann auch beides nehmen.
@@ -172,14 +172,14 @@ Die Antivalenz ist auch ein wichtiger Junktor, der hier aber nicht näher eingef
 Die Implikation bereitet vielen am Anfang Bauchschmerzen, da sie dem umgangssprachlichen "wenn ..., dann ..." auf den ersten Blick nicht vollkommen entspricht.
 Hierfür findet man im Web viele weitere Erklärungen und Beispiele, die vielleicht Abhilfe schaffen können.
 
-### Klassifikation von Formeln
-:::note Modell
+### Klassifikation von Formeln {/* #klassifikation-von-formeln */}
+:::note[Modell]
 
 Jede Belegung, unter der die Formel wahr wird nennen wir ein *Modell* der Formel.
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-2 */}
 $$
 \begin{array}{c||c|c||c}
      & A & B & F = (A \wedge B) \rightarrow B\\
@@ -207,7 +207,7 @@ Solche Formeln haben einen bestimmten Namen, der in der nächsten Definition ein
 
 Wir können Formeln nun anhand ihrer Modelle in verschiedene Klassen einteilen:
 
-:::note Klassifikation von Formeln
+:::note[Klassifikation von Formeln]
 
 Falls die Formel mindestens ein Modell hat, nennen wir sie *erfüllbar*.
 
@@ -219,7 +219,7 @@ Man nennt so eine Formel auch *Kontradiktion* oder *Widerspruch*.
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-3 */}
 Oben haben wir bereits eine Tautologie gesehen.
 Eine weitere wäre:
 $$
@@ -246,18 +246,18 @@ Diese Formel nennt man auch *Widerspruch*.
 Es kann $A$ *und* $\neg A$ nie gleichzeitig gelten.
 Wenn also bspw. jemand behauptet "Ich wohne in Berlin", er aber gleichzeitig sagt "Ich wohne nicht in Berlin", dann widerspricht er sich ja selbst.
 
-### Semantische Äquivalenz
+### Semantische Äquivalenz {/* #semantische-äquivalenz */}
 Wenn wir über verschiedene Formeln reden und bestimmen wollen, ob diese Formeln das gleiche Aussagen,
 dann ist das die Frage nach der *semantischen Äquivalenz*.
 
-:::note Semantische Äquivalenz
+:::note[Semantische Äquivalenz]
 
 Zwei Formeln $F$ und $G$ heißen *semantisch äquivalent*, wenn sie die gleichen Modelle haben.
 Man schreibt $F \equiv P$.
 
 :::
 
-#### Beispiel
+#### Beispiel {/* #beispiel */}
 $$
 \begin{array}{c|c||c|c}
     A & B & A \rightarrow B & \neg B \rightarrow \neg A\\
@@ -275,7 +275,7 @@ schonmal mit der objektsprachlichen *syntaktischen Äquivalenz* verknüpft und d
 Es gibt einen wichtigen Zusammenhang zwischen der objektsprachlichen *syntaktischen Äquivalenz*
 und der metasprachlichen *semantischen Äquivalenz*:
 
-:::info Semantische und syntaktische Äquivalenz
+:::info[Semantische und syntaktische Äquivalenz]
 
 Zwei Formeln $F$ und $P$ heißen *semantisch äquivalent*, genau dann, wenn $F \leftrightarrow P$ eine Tautologie ist.
 
@@ -284,7 +284,7 @@ Zwei Formeln $F$ und $P$ heißen *semantisch äquivalent*, genau dann, wenn $F \
 Es gibt ein paar wichtige semantische Äquivalenzen, die uns auch beim *Rechnen* oder *Umformen* von Formeln helfen.
 Die tatsächliche semantische Äquivalenz lässt sich leicht durch aufstellen einer Wertetabelle ermitteln und ist eine gute Übung.
 
-:::tip Wichtige semantische Äquivalenzen
+:::tip[Wichtige semantische Äquivalenzen]
 
 1. $$
     \begin{align*}
@@ -427,7 +427,7 @@ Die tatsächliche semantische Äquivalenz lässt sich leicht durch aufstellen ei
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele-4 */}
 Im folgenden Beispiel wird eine Formel durch obige Äquivalenzen in eine äquivalente Formel umgeformt.
 Die verwendete Äquivalenz wird entsprechend der Nummerierung oben angegeben, damit es besser nachvollziehbar ist, was umgeformt wurde.
 $$
@@ -452,17 +452,17 @@ Das Umformen von Gleichungen in der Schule ist übrigens ähnlich.
 Vielleicht hat dein Mathelehrer mal das Wort "*Äquivalenzumformung*" dafür verwendet.
 Es wird so umgeformt, dass sich der Wahrheitswert der Gleichung nicht ändert.
 
-## Prädikatenlogik (PL 1)
+## Prädikatenlogik (PL 1) {/* #prädikatenlogik-pl-1 */}
 Die Aussagenlogik allein reicht leider nicht aus, um viele Problemstellungen in der Mathematik vernünftig zu formulieren.
 
-:::note Variable
+:::note[Variable]
 
 Sei $G$ ein Grundbereich von Objekten.
 Für eine *Variable* $x$ über $G$ kann ein Objekt aus $G$ eingesetzt werden.
 
 :::
 
-:::note Aussagenform
+:::note[Aussagenform]
 
 Eine *Aussagenform* $H$ über $G$ ist ein schriftsprachliches Gebilde mit mindestens einer Variable.
 Durch Einsetzen von Objekten aus $G$ **für alle** Variablen wird $H$ zu einer Aussage.
@@ -475,7 +475,7 @@ Aussagenformen wurden bereits in der [Aussagenlogik](#syntax)) oben eingeführt,
 
 Das Zusammensetzen von Aussagen(-formen) mit den entsprechenden Junktoren ist analog zur Aussagenlogik.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-5 */}
 Sei $G = \mathbb{N}$ Grundbereich und $A(n) \coloneqq ``n + 1 = 3''$ Aussagenform.
 Durch Ersetzen der Variable $n$ durch ein Objekt aus $G$, hier also einer natürlichen Zahl, wird $A(x)$ zu einer Aussage:
 - Für $n = 1$ ist $A(1) \coloneqq ``1 + 1 = 3''$ eine falsche Aussage.
@@ -488,7 +488,7 @@ während $Mensch(Grumpy Cat)$, sprich "Grumpy Cat ist ein Mensch" eine falsche A
 
 Doch in der Prädikatenlogik gibt es noch mehr, was diese ausmacht:
 
-:::note Quantifizierung
+:::note[Quantifizierung]
 
 Quantoren:
 - Allquantor: $\forall x$ - sprich: "Für alle $x$ aus $G$"
@@ -506,7 +506,7 @@ Nicht gebundene Variablen heißen *frei*.
 Eine Aussagenform wurde erst zu einer Aussage, wenn wir die Variablen durch ein konkretes Objekt aus $G$ ersetzt haben.
 Durch ein Quantor ist eine Aussagenform direkt eine Aussage:
 
-#### Beispiele
+#### Beispiele {/* #beispiele-6 */}
 Sei $G = \mathbb{N}$ Grundbereich und $H(x) \coloneqq ``x + 1 = 3''$ Aussagenform.
 Durch Quantifizierung entstehen folgende Aussagen:
 - $\forall x (x + 1 = 3)$ - "Für alle $x$ aus $G$ gilt $x + 1 = 3$" ist eine falsche Aussage.

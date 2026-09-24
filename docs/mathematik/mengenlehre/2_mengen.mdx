@@ -12,11 +12,11 @@ Diese Axiomatisierung wird hier allerdings nicht direkt vorgestellt oder explizi
 Stattdessen werden manche Axiome beiläufig eingeführt.
 Es können auch Axiome vorkommen, die in anderen Axiomatisierungen der Mengenlehre auftreten.
 
-## Mengenbildung
+## Mengenbildung {/* #mengenbildung */}
 *Bertrand Russell* entwickelte die *Typentheorie*, nach der man die Mengenlehre auch stufenweise aufbauen kann.
 Hierbei gibt es eine kleinste Stufe, deren Elemente man *Urelemente* oder *Urmengen* nennt.
 
-:::note Stufenaufbau nach Russell
+:::note[Stufenaufbau nach Russell]
 
 $$
     \begin{array}{c|c||c}
@@ -32,7 +32,7 @@ $$
 
 :::
 
-#### Beispiele
+#### Beispiele {/* #beispiele */}
 Dabei sind die Elemente der jeweiligen Stufe stets Elemente der vorigen Stufe.
 
 Eine Menge von Urelementen ist also eine Menge erster Stufe: $M^1 = \{ X^0, Y^0 \} = \{ a, b \} = A$.
@@ -43,7 +43,7 @@ Mengensysteme spielen u.a. in der Maßtheorie eine wichtige Rolle, in der auch d
 
 Folgendes Axiom bildet eine Brücke zur Logik:
 
-:::tip Mengenbildungsaxiom
+:::tip[Mengenbildungsaxiom]
 
 Sei $H(M^n)$ Aussage über Mengen $n$-ter Stufe.
 $$
@@ -56,7 +56,7 @@ wobei $M^{n+1}$ nicht in $H(M^n)$ vorkommt.
 :::
 Das Mengenbildungsaxiom sagt aus, dass es eine Menge $M^{n+1}$ gibt, die aus den Elementen $M^n$ besteht, die eine gewisse Aussage erfüllen. 
 
-#### Beispiele
+#### Beispiele {/* #beispiele-1 */}
 Sei $n = 0$, dann können wir die Aussage im Satz mit den üblichen Benennungen wie folgt schreiben:
 $$
     \begin{equation*}
@@ -75,7 +75,7 @@ So eine Aussagenform $H(x)$ nennt man auch *definierenden Ausdruck*.
 Man schreibt Mengen mit definierenden Ausdrücken häufig so:
 $M = \{ x\ |\ H(x) \}$.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-2 */}
 Das obige Beispiel mit den geraden natürlichen Zahlen schreibt man also so:
 $M = \{ x\ |\ x \in \mathbb{N} \wedge x \text{ gerade} \}$
 
@@ -85,7 +85,7 @@ Weitere Beispiele sind:
 - Menge der ganzzahligen Lösungen einer Gleichung: $M = \{ x\ |\ x \in \mathbb{Z} \wedge x^2 + 2 = 4x - 1 \}$
 - Menge aller ganzen Quadratzahlen: $M = \{ x\ |\ \exists y \in \mathbb{Z} \colon x = y^2 \}$
 
-:::note Extensionalitätsaxiom (ZF) / Gleichheit von Mengen
+:::note[Extensionalitätsaxiom (ZF) / Gleichheit von Mengen]
 
 Zwei Mengen sind gleich, wenn sie die gleichen Elemente besitzen:
 $$
@@ -96,13 +96,13 @@ $$
 
 :::
 
-## Mengenalgebra
+## Mengenalgebra {/* #mengenalgebra */}
 Auf Mengen kann verschiedene Operationen durchführen.
 Man stelle sich vor, man möchte zwei Mengen zusammenfassen zu einer oder man möchte eine Menge erzeugen, 
 die nur die Elemente enthält, die zwei Mengen gemeinsam haben.
 Diese Mengenoperationen werden im folgenden vorgestellt.
 
-### Mengenoperationen
+### Mengenoperationen {/* #mengenoperationen */}
 Charakteristisch für Mengenoperationen ist, dass sie direkt auf den logischen Operatoren basieren und das auch in ihren
 Operationssymbolen wiederspiegeln.
 Zwischen den Mengen- und den Logikoperatoren besteht also eine enge Verbindung, 
@@ -115,11 +115,11 @@ Diese Ovale können überlappen, um zu zeigen, dass sie Elemente gemeinsam haben
 Der in lila eingefärbte Bereich ist dann die neue Menge, die entsteht, wenn man eine Mengenoperation auf den vorhanden Mengen ausführt.
 Eine solche Darstellung nennt man *Venn-Diagramm*[^2].
 
-#### Durchschnitt
+#### Durchschnitt {/* #durchschnitt */}
 Die Menge die entsteht, wenn man nur die Elemente aus zwei gegebenen Mengen nimmt, die sie gemeinsam haben nennt man *Durchschnitt*
 oder *Schnittmenge*.
 
-:::note Durchschnitt
+:::note[Durchschnitt]
 
 $$
     A \cap B \coloneqq \{ x\ |\ x \in A \wedge x \in B \}
@@ -132,7 +132,7 @@ Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](/img/mathematik/mengenlehre/durchschnitt.png)
 
-##### Beispiele
+##### Beispiele {/* #beispiele-3 */}
 Gegeben seien $A = \{ a, b, c \}$ und $B = \{ b, c, d \}$.
 Dann ist $A \cap B = \{ b, c \}$.
 
@@ -147,12 +147,12 @@ Die beiden Mengen $A$ und $B$ sind gleich - entsprechend auch deren Durchschnitt
 Gegeben seien $A = \{ x\ |\ x \in \mathbb{N} \wedge x \text{ ist gerade} \}$ und $B = \{ 2, 8, 1001, 4088, 9999 \}$.
 Dann ist $A \cap B = \{2, 8, 4088 \}$.
 
-#### Vereinigung
+#### Vereinigung {/* #vereinigung */}
 Die Menge die entsteht, wenn man die Elemente aus zwei gegebenen Mengen nimmt, und sie in einer Menge *vereinigt*
 nennt man *Vereinigung* oder *Vereinigungsmenge*.
 Elemente, die in beiden vorkommen, werden dabei nur einmal gezählt.
 
-:::note Vereinigung
+:::note[Vereinigung]
 
 $$
     A \cup B \coloneqq \{ x\ |\ x \in A \vee x \in B \}
@@ -165,7 +165,7 @@ Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](/img/mathematik/mengenlehre/vereinigung.png)
 
-##### Beispiele
+##### Beispiele {/* #beispiele-4 */}
 Gegeben seien $A = \{ a, b, c \}$ und $B = \{ b, c, d \}$.
 Dann ist $A \cup B = \{ a, b, c, d \}$.
 
@@ -176,10 +176,10 @@ Gegeben seien $A = \{ a, b, c \}$ und $B = \{ a, b, c \}$.
 Dann ist $A \cup B = \{ a, b, c \} = A = B$.
 Die beiden Mengen $A$ und $B$ sind gleich - entsprechend auch deren Vereinigung.
 
-#### Komplement
+#### Komplement {/* #komplement */}
 Das *Komplement* einer Menge besteht gerade aus den Elementen, die nicht in der Menge $A$ liegen, also alles andere außer die Menge $A$.
 
-:::note Komplement
+:::note[Komplement]
 
 $$
     \overline{A} = A^\complement \coloneqq \{ x\ |\ \neg (x \in A) \} = \{ x\ |\ x \notin A \}
@@ -192,7 +192,7 @@ Zugehöriges Venn-Diagramm:
 
 ![Venn Diagramm zum Mengen-Durchschnitt](/img/mathematik/mengenlehre/komplement.png)
 
-##### Beispiele
+##### Beispiele {/* #beispiele-5 */}
 Gegeben seien $M = \{ a, b, c, d, e \}$ und $A = \{ b, c, d \}$.
 Dann ist $\overline{A} = \{ a, e \}$.
 Hier ist es wichtig, dass wir $A$ in einen Bezug zu einer anderen "Übermenge" $M$ setzen.
@@ -202,11 +202,11 @@ Die Menge $A$ ist ein Teil des Universums $M$.
 Gegeben sei das Universum $A = \{ b, c, d \}$.
 Dann ist $\overline{A} = \emptyset$.
 
-#### Differenz
+#### Differenz {/* #differenz */}
 Wenn man zwei Mengen hat und man möchte eine Menge bilden, die nur die Elemente enthält, die in einer Menge vorkommen, 
 aber ohne die Elemente, die auch in der anderen liegen, dann ist das die *Differenzmenge* oder *Mengendifferenz*.
 
-:::note Differenz
+:::note[Differenz]
 
 $$
     A \setminus B \coloneqq \{ x\ |\ x \in A \wedge x \notin B \}
@@ -223,7 +223,7 @@ Zugehöriges Venn-Diagramm:
 Für die Differenz und das Komplement gilt eine besondere Beziehung:
 Sei $M$ das Universum und $A$ Teil des Universums, dann gilt: $M \setminus A = \overline{A}$.
 
-##### Beispiele
+##### Beispiele {/* #beispiele-6 */}
 Gegeben seien $A = \{ a, b, c, d \}$ und $B = \{ b, c, d, e \}$.
 Dann ist $A \setminus B = \{ a \}$.
 
@@ -236,10 +236,10 @@ Dann ist $M \setminus A = \{ a, d \} = \overline{A}$.
 Die Mengenoperationen wurden anhand Mengen 1. Stufe eingeführt, wie es die Symboliken erahnen lassen.
 Jedoch gelten diese auch für Mengen höherer Stufen.
 
-### Rechenregeln für Mengenoperationen
+### Rechenregeln für Mengenoperationen {/* #rechenregeln-für-mengenoperationen */}
 Für die Mengenoperationen gibt es gewisse Rechenregeln, die hier nun vorgestellt werden sollen.
 
-:::tip Rechenregeln für Mengenoperationen
+:::tip[Rechenregeln für Mengenoperationen]
 
 1. $$
    \begin{align*}
@@ -294,7 +294,7 @@ so ist es keineswegs sicher, dass es im Allgemeinen gilt.
 In der Mathematik muss man auch solche Kleinigkeiten beweisen.
 Also folgt an dieser Stelle ein erster Beweis für die Assoziativität des Durchschnitts:
 
-#### Beweis
+#### Beweis {/* #beweis */}
 Zu zeigen ist: $(A \cap B) \cap C = A \cap (B \cap C)$
 $$
 \begin{alignat*}{2}
@@ -313,13 +313,13 @@ Das $\blacksquare$ markiert schließlich das Ende des Beweises.
 
 Nach ähnlichem Schema können nun auch die anderen Regeln bewiesen werden.
 
-### Teilmenge
+### Teilmenge {/* #teilmenge */}
 In den Beispielen beim [Komplement](#beispiele-5) tauchte folgender Satz auf:
 > Die Menge $A$ ist ein Teil des Universums $M$.
 
 Dieses Wort "Teil" lässt sich wie folgt definieren:
 
-:::note Inklusion
+:::note[Inklusion]
 
 Seien $M, A$ Mengen.
 - $A \subseteq M \coloneqq \forall x \colon x \in A \rightarrow x \in M$
@@ -332,7 +332,7 @@ für $A \subset M$ spricht man "$A$ ist *echte Teilmenge* von $M$"
 Eine Teilmenge $A$ ist also mit ihren Elementen ganz und gar in ihrer *Obermenge* $M$ enthalten.
 Man bezeichnet diese Teilmengenbeziehung auch als *Inklusion*.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-7 */}
 Gegeben seien $M = \{ a, b, c, d \}$ und $A = \{ a, b \}$.
 Dann gilt $A \subseteq M$. 
 Es gilt sogar $A \subset M$.
@@ -343,13 +343,13 @@ Dann gilt $A \subseteq M$, aber nicht $A \subset M$.
 Gegeben seien $M = \{ a, b, c, d \}$ und $A = \{ e, f, g \}$.
 Dann gilt $A \not\subseteq M$.
 
-### Verband
+### Verband {/* #verband */}
 In der Mathematik untersucht man viele Strukturen.
 Strukturen sind dabei meist eine Menge mit zusätzlichen Dingen, wie Operationen.
 Die formale Definition einer ($n$-stelligen) Operation erfolgt später.
 Hier sei nur gesagt, dass $\cap$ und $\cup$ *zweistellige Operationen* sind.
 
-:::note Verband
+:::note[Verband]
 
 Seien $\mathfrak{M}$ Menge und $\cap, \cup$ zweistellige Operationen in $\mathfrak{M}$.
 
@@ -371,11 +371,11 @@ Wie diese Operation aussieht ist egal.
 Es kann also auch eine völlig andere Operation gewählt werden, solange sie die Rechenregeln erfüllt ist es ein Verband.
 $\cap$ und $\cup$ stehen also lediglich für ein Symbol, das gegen ein anderes Symbol und entsprechender Bedeutung ausgetauscht werden kann.
 
-### Potenzmenge
+### Potenzmenge {/* #potenzmenge */}
 Eine wichtige Menge (mindestens) zweiter Stufe ist die *Potenzmenge*.
 Die *Menge aller Teilmengen*.
 
-:::note Potenzmenge
+:::note[Potenzmenge]
 
 Sei $M$ Menge, dann heißt $2^M = \mathcal{P}(M) = \{ A\ |\ A \subseteq M \}$ *Potenzmenge* von $M$.
 
@@ -384,7 +384,7 @@ Die Bezeichnung $2^M$ kommt daher, da die Anzahl der Elemente in der Potenzmenge
 Wenn also $M$ drei Elemente enthält, dann hat $\mathcal{P}(M)$ $2^3 = 8$ Elemente.
 Die Anzahl der Elemente einer Menge wird im Abschnitt [Endlichkeit und Kardinalzahlen](./endlichkeit) weiter thematisiert.
 
-#### Beispiele
+#### Beispiele {/* #beispiele-8 */}
 Gegeben sei $M = \{ a, b, c \}$.
 Dann ist $\mathcal{P}(M) = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, M \}$ Potenzmenge von $M$.
 Man beachte, dass insbesondere auch die leere Menge $\emptyset$ und die Menge $M$ selbst Teilmengen von $M$ sind.
